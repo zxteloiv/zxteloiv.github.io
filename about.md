@@ -4,8 +4,13 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+Hi, visitor! Thanks for reading my page.
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+My name is Xiang Zhang. I am an developer at [DidiTaxi](http://www.xiaojukeji.com/website/index.html).
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+I am mainly working on (geographic) POI, like indexing, searching or text mining.  
+I also do some research work for our product, and try some methods for new features in our product.
+
+I''m interested in machine learning, natural language processing and math. 
+Very glad to communicate with you all.
+
