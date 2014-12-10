@@ -3,7 +3,7 @@ layout: post
 title:  "记一次信用卡诈骗"
 date:   2014-12-05 02:36
 tags: cheat fraud
-categories: life
+category: life
 ---
 
 没想到整理blog之后发第一篇内容就是这个 #fml

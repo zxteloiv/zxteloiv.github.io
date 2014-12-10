@@ -8,6 +8,7 @@ layout: incoming
 
   <ul class="post-list">
     {% for post in site.posts %}
+    {% if "life" != post.category %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
@@ -18,6 +19,7 @@ layout: incoming
         {{ post.excerpt }}
         </p>
       </li>
+    {% endif %}
     {% endfor %}
   </ul>
 
