@@ -12,5 +12,8 @@ I am mainly working on (geographic) POI, like indexing, searching or text mining
 I also do some research work for our product, and try some methods for new features in our product.
 
 I'm interested in machine learning, natural language processing and math.   
+
+The title of this blog comes from the lyric of `Hemisphere`, a perfect works by Yoko Kanno and Maaya Sakamoto.
+
 Very glad to communicate with you all.
 
