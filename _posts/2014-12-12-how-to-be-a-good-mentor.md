@@ -11,7 +11,7 @@ As I have experienced before, a good mentor is important for a new employee, esp
 To interview candidate
 ----
 
-It may be useful if you have chance to interview your candidate. Although this is somewhat far from the topic here, I think it's useful to communicate with these candidate before he finally become your intern or colleague.
+It may be useful if you have chance to interview your candidate. Although this is somewhat far from the topic here, I think it's useful to communicate with a candidate before he finally become your intern or colleague.
 
 Make sure the candidate matches the job you are hiring or he have the ability to do what you want him to do. And more importantly, let him know what you are doing, too. Do not hide or exaggerate anything as long as it's not classified.
 
@@ -47,7 +47,7 @@ Communicate rather than educate, trust him and earn his trust
 
 Talk about other things outside of work, too. Topics like hometown, restaurant nearby, schools will help you understand both. A mentor is equal to a new man as a staff. So a mentor is not help someone to study, but help him to join the team and burn his smart quickly.
 
-And exchange of thoughts is also in both direction. Try to use words like "one method I can now come out with is that ...", "what can you think about this problem". Make him feel like (and actually it is) you two are discussing equally and you are not send him commands.
+And exchange of thoughts is also in both direction. Try to use words like "one method I can now come out with is that ...", "what can you think about this problem". Make him feel like (and actually it is) you two are discussing equally and you are not sending him commands.
 
 Be patient, and ask questions at time
 ----
