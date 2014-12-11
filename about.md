@@ -13,7 +13,7 @@ I also do some research work for our product, and try some methods for new featu
 
 I'm interested in machine learning, natural language processing and math.   
 
-The title of this blog comes from the lyric of `Hemisphere`, a perfect works by Yoko Kanno and Maaya Sakamoto.
+The title of this blog comes from the lyric of `Hemisphere`, a piece of perfect work by Yoko Kanno and Maaya Sakamoto.
 
 Very glad to communicate with you all.
 
