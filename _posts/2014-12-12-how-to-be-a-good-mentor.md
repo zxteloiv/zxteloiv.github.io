@@ -3,7 +3,7 @@ layout: post
 title:  "How to be a mentor for a newly graduated employee"
 date:   2014-12-12 00:24
 tags: mentor employee methodology
-categories: work
+categories: main work
 ---
 
 As I have experienced before, a good mentor is important for a new employee, especially for the undergraduated who just come out from school and join the work force. Different from that we learn by ourselves, to be a mentor for someone and give him advice and support is another difficult problem. I've also asked several of my friends, they give me some of their experience as a mentor. When it comes to me, I think it's useful to write things down to record the way to be a good mentor. Because of my work, I mainly refer to the mentor in an IT company.

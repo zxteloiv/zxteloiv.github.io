@@ -3,7 +3,7 @@ layout: post
 title:  "Notes on building up oneself in a specific field"
 date:   2014-12-23 22:31
 tags: personal-development methodology
-categories: work
+categories: note work
 ---
 
 I've talked to my new leader today and we discussed several questions. I found some new ideas to me which may be helpful.
