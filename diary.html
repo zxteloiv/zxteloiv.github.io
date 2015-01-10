@@ -1,0 +1,27 @@
+---
+layout: default
+title: notes
+permalink: /diary/
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Notes</h1>
+
+  <ul class="post-list">
+    {% for post in site.categories.life %}
+      <li>
+          <p>
+            <span>{{ post.date | date: "%b %-d, %Y" }}</span> 
+            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </p>
+          <p>
+          {{ post.excerpt }}
+          </p>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
