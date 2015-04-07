@@ -6,7 +6,7 @@ layout: null
     {% for post in site.posts %}
     {% if "life" != post.category %}
     <url>
-        <loc>{{ post.url | prepend: site_url }}</loc>
+        <loc>{{ site.url }}{{ post.url }}</loc>
         {% if post.last_modified_at %}
         <lastmod>{{ post.last_modified_at | date_to_xmlschema }}</lastmod>
         {% else %}
