@@ -15,6 +15,7 @@ LaTeX is a typesetting system, which adopts the merit that to separate the writi
 We need to write a tex source file, and use a compiler, often an appropriate TeX system, to get some standard format file to finally read or print.
 
 The compiler or the TeX system is
+
 * On Mac, use the [MacTeX](https://www.tug.org/mactex/) or [BasicTeX](https://www.tug.org/mactex/morepackages.html).
 * On Linux, use the texlive.
 * On Windows, often some integrated environment can be obtained online.
@@ -24,6 +25,7 @@ Since every time we modify the .tex file we have to compile it to see the result
 And my choice is BasicTex(mainly the pdflatex utility in it) + vim + Preivew(to see the resulted pdf).
 
 As the configuration is complicate, I also prefer some online latex services which requires writing .tex file only and give you the final pdf to download, which is simple and thin.
+
 * [Authorea](https://www.authorea.com/)
 * [ShareLaTeX](https://www.sharelatex.com/)
 * [Overleaf](https://www.overleaf.com/)
