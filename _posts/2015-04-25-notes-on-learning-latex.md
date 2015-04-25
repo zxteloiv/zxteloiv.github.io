@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Notes on building up oneself in a specific field"
+title:  "Notes on learning latex"
 date:   2015-04-25 15:51
 tags: latex typesetting writing
 categories: note learning
