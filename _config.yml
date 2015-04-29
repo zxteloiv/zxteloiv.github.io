@@ -5,7 +5,7 @@ description: > # this means to ignore newlines until "baseurl:"
   僕は僕のことが知りたい...
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://libzx.so" # the base hostname & protocol for your site
-twitter_username:
+twitter_username: haruki_kirigaya
 github_username:  zxteloiv
 
 # Build settings
