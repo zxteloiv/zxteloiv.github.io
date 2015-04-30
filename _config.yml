@@ -1,8 +1,7 @@
 # Site settings
 title: It's calling me again
 email: zxteloiv@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  僕は僕のことが知りたい...
+description: 僕は僕のことが知りたい...
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://libzx.so" # the base hostname & protocol for your site
 twitter_username: haruki_kirigaya
