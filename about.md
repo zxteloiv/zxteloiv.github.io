@@ -6,12 +6,15 @@ permalink: /about/
 
 Hi, visitor! Thanks for reading my page.
 
-My name is Xiang Zhang. I am a developer at [DidiTaxi](http://www.xiaojukeji.com/website/index.html).
+My name is Xiang Zhang.
+I am a former [NEET](http://en.wikipedia.org/wiki/NEET), former programmer and novice researcher.
 
-I am mainly working on (geographic) POI, like indexing, searching or text mining.  
-I also do some research work for our product, and try some methods for new features in our product.
+I've ever worked in [DidiTaxi](http://www.xiaojukeji.com/) and [Tencent](http://www.tencent.com/).
 
-I'm interested in machine learning, natural language processing and math.   
+My previous work includes indexing, searching and recommendation on (geographic) POIs, and ranking optimization for geographic queries in our search engine.   
+I also wrote some strategies in our product operation activities, for instance, the randomized amount of coupon in a taxi red envelope.
+
+I'm interested in machine learning, natural language processing and math. I like using Python and C++ both.
 
 The title of this blog comes from the lyric of `Hemisphere`, a piece of perfect work by Yoko Kanno and Maaya Sakamoto.
 
