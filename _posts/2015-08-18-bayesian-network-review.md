@@ -134,7 +134,7 @@ Refer to Barber's book[2] you will find another definition.
 
 ### 4. Graphical and Distributional Independence
 
-Up to now I only understand that the independence in an distribution could be more than that of a graph. And also a distribution could have more graph compatable to it, since the influence is in bidirection while the 
+Up to now I only understand that the independence in an distribution could be more than that of a graph. And also a distribution could have more graph compatable to it, since the influence is in bidirection while the network graph suggested the causality of only one variable on another. So this section remains under constructionˊ\_>ˋ
 
 
 ### Bibliography
