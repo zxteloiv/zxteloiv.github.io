@@ -11,9 +11,12 @@
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
-    {% if page.mathjax %}
+    {% if page.math_support == 'mathjax' %}
     <script type="text/javascript"
             src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
     </script>
+    {% elsif page.math_support == 'katex' %}
+    <link rel="stylesheet" href="/assets/katex/katex.min.css">
+    <script src="/assets/katex/katex.min.js"></script>
     {% endif %}
 </head>

@@ -14,6 +14,10 @@ layout: default
 
 </div>
 
+{% if page.math_support == 'katex' %}
+    {% include katex_render.html %}
+{% endif %}
+
 <div id="disqus_thread"></div>
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
