@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "抽象代数笔记 - 1 - 集合论"
-date:   2015-04-25 15:51
+date:   2015-08-23 20:30
 tags: learning, math, abstract_algebra, group_theory, set_theory
 categories: note learning
 math_support: katex
