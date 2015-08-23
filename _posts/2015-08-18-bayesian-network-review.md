@@ -3,7 +3,7 @@ layout: post
 title:  "Personal Reviews on Bayesian Networks"
 date:   2015-08-18 22:37
 tags: bayesian-network
-math_support: mathjax
+math_support: katex
 categories: main learning
 ---
 

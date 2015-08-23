@@ -1,4 +1,5 @@
-    <script>
+<script>
+    /* auto-render extension in katex is deprecated now
       renderMathInElement(
           document.getElementById("test"),
           {
@@ -10,4 +11,19 @@
               ]
           }
       );
-    </script>
+      */
+
+    // use jquery to render 
+    $("script[type='math/tex']").replaceWith(
+      function(){
+        var tex = $(this).text();
+        return katex.renderToString(tex);
+    });
+
+    $("script[type='math/tex; mode=display']").replaceWith(
+      function(){
+        var tex = $(this).text();
+        return katex.renderToString("\\displaystyle " + tex, this, { displayMode: true });
+    });
+
+</script>
