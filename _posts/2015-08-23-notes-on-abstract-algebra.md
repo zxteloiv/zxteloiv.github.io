@@ -1,15 +1,15 @@
 ---
 layout: post
-title:  "抽象代数笔记 - 1 - 集合论"
-date:   2015-08-23 20:30
+title:  "抽象代数笔记(updating)"
+date:   2015-10-19 11:10
 tags: learning math abstract_algebra group_theory set_theory
 categories: note learning
-math_support: katex
+math_support: mathjax
 ---
 
-### 1. 集合
+## 1. 集合
 
-#### 1.1 定义
+### 1.1 定义
 
 朴素集合论中，对“集合”不给出定义。
 
@@ -26,7 +26,7 @@ math_support: katex
 
 集合A与B相等：$$ A \subset B $$ 且 $$ A \supset B $$
 
-#### 1.2 基本运算
+### 1.2 基本运算
 
 * 并集
 * 交集
@@ -53,7 +53,7 @@ math_support: katex
 
 幂集: 子集的集合
 
-#### 1.3 关系
+### 1.3 关系
 
 关系：定义在 A 上的关系，是 A 与自身卡式积的子集
 
@@ -75,7 +75,7 @@ $$ [a] = [b] \Leftrightarrow a \sim b $$
 
 商集：有等价关系～的类A，A/～ 定义为商集，由等价类组成集合，即 $$ \{[a] \mid a \in A \} $$
 
-#### 1.4 映射
+### 1.4 映射
 
 * 映射 是 A X B 的子集 f，对任意 a，仅有一个 (a, b) 属于 f
 * A 为定义域，B 为培域，B 中一部分为值域
@@ -102,11 +102,13 @@ f 为一个推出，f(C) 为像.
 
 Cantor-Bernstein-Schroder 定理: 如果集合 A 与 B 之间存在单射 $$ f : A \rightarrow B $$ 和 单射 $$ g: B \rightarrow A $$, 则它们之间存在一一对应(proof?)
 
-#### 定义良好
+### 定义良好
 
 关于映射定义，需要检验是否真是一个映射（不可以有一个元素映射到多个元素）
 
-### 2. 群
+## 2. 群
+
+### 2.1 群定义
 
 定义群：群是一个集合 G 及其上的一个二元运算 $$ *: G \times G \rightarrow G $$, 并且满足：
 
@@ -122,5 +124,31 @@ Cantor-Bernstein-Schroder 定理: 如果集合 A 与 B 之间存在单射 $$ f :
 * 逆元只有一个
 * $$ \forall a, b \in G, \, (ab)^{-1} = b^{-1}a^{-1} $$
 * 任意元素逆元的逆元是它本身
+
+### 2.2 子群和生成
+
+子群：当 H 是群 G 的一个子集并且乘法 * 限定到 H 上跟 H 也构成一个群的时候，我们称 H 为G 的 一个子群.
+
+记作：$$H \le G$$
+
+有如下定理:
+
+* G的恒等元素e属于H并且是H的恒等元素
+* a在H里的逆元素也是a在G里的逆元素
+
+生成: 由S生成的子群为
+
+$$
+<S> = \bigcap_{S \subset H \le G} H
+$$
+
+S 为 &lt;S&gt; 的生成集，S 的元素为 &lt;S&gt; 的生成元素.
+
+需证明子群集合 $$ \{H_\alpha \mid \alpha \in I\} $$，则该集合元素的交也是一个S的子群.
+
+* 封闭
+* 结合
+* 单位元
+* 逆元
 
 
