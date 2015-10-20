@@ -142,6 +142,8 @@ $$
 <S> = \bigcap_{S \subset H \le G} H
 $$
 
+即：包含S的子群之交。
+
 S 为 &lt;S&gt; 的生成集，S 的元素为 &lt;S&gt; 的生成元素.
 
 需证明子群集合 $$ \{H_\alpha \mid \alpha \in I\} $$，则该集合元素的交也是一个S的子群.
