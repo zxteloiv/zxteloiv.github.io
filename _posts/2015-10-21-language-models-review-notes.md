@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Language models revisited"
-date:   2015-10-21 21:00
+date:   2015-10-21 21:54
 tags: learning natural_language_processing language_model
 categories: note learning
 math_support: katex
