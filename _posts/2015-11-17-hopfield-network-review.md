@@ -11,7 +11,7 @@ math_support: mathjax
 
 结构：各个神经元互相联系，但并不与自己相连，故是一种反馈网络
 
-输出：$v_i(t+1) = f(\sum_{j\ne i}(w_{ij}v_j(t)) + b_i)$
+输出：$$v_i(t+1) = f(\sum_{j\ne i}(w_{ij}v_j(t)) + b_i)$$
 
 运行方式：
 
