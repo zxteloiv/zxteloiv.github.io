@@ -36,19 +36,19 @@ $$A = \int_X\mu_A(x_i)/x \text{ or } \sum_{x_i\in X}\mu_A(x_i)/x_i$$
 
 模糊集合基本运算
 
-1. 相等 $ A = B \leftrightarrow \mu_A(x) = \mu_B(x)$
-2. 包含/子集 $A\subset B \leftrightarrow \mu_A(x)\leq\mu_B(x)$
-3. 模糊空集 $A=\emptyset \leftrightarrow \mu_A(x) = 0 $
-4. 并(取大) $C = A\cup B, \mu_C=max(\mu_A(x),\mu_B(x)) = \mu_A(x)\vee\mu_B(x)$
-5. 交(取小) $C = A\cap B, \mu_C=\mu_A\wedge\mu_B$
+1. 相等 $$ A = B \leftrightarrow \mu_A(x) = \mu_B(x)$$
+2. 包含/子集 $$A\subset B \leftrightarrow \mu_A(x)\leq\mu_B(x)$$
+3. 模糊空集 $$A=\emptyset \leftrightarrow \mu_A(x) = 0 $$
+4. 并(取大) $$C = A\cup B, \mu_C=max(\mu_A(x),\mu_B(x)) = \mu_A(x)\vee\mu_B(x)$$
+5. 交(取小) $$C = A\cap B, \mu_C=\mu_A\wedge\mu_B$$
 6. 补(用1减)
 
 模糊集合性质
 
-1. 幂等 $A\cup A = A, A\cap A = A$
+1. 幂等 $$A\cup A = A, A\cap A = A$$
 2. 交换、结合 
-3. 吸收 $A\cup (A\cap B) = A$
-4. 分配 $A\cup (B\cap C) = (A\cup B)\cap(A\cup C)$
+3. 吸收 $$A\cup (A\cap B) = A$$
+4. 分配 $$A\cup (B\cap C) = (A\cup B)\cap(A\cup C)$$
 5. 对偶(德摩根)
 6. 两极
 
@@ -86,45 +86,47 @@ M 规定了隶属度函数：年幼->年龄范围
 **语气算子**: 词的前缀改变隶属度(e.g.)
 
 $$
+
 \begin{aligned}
 \mu_{\text{extremely }A} &= \mu_A^4, \\
 \mu_{\text{very} A} &= \mu_A^{1.25}, \\
 \mu_{\text{a bit } A} &= \mu_A^{0.25}
 \end{aligned}
+
 $$
 
 #### 模糊蕴含关系
 
-* 蕴含：if ... then ... 记作 $A\to B$.
+* 蕴含：if ... then ... 记作 $$A\to B$$.
 * 命题：
   * 二值命题 为真(1)或假(0)，
   * 模糊命题: [0, 1] 上取值
 * 记法
-  * if A then B: $A\to B$
-  * if A then B else C: $(A\to B)\cup(\bar A\to C)$
-  * if A and B then C: $A\times B \to C$
+  * if A then B: $$A\to B$$
+  * if A then B else C: $$(A\to B)\cup(\bar A\to C)$$
+  * if A and B then C: $$A\times B \to C$$
 
 **模糊蕴含的运算**
 
 * 模糊蕴含最小运算 Mamdani
-  * $R = A\to B = A\times B = A^TB = \int\mu_A(x)\cap \mu_B(y) /(x,y)$
+  * $$R = A\to B = A\times B = A^TB = \int\mu_A(x)\cap \mu_B(y) /(x,y)$$
   * A 为 m * 1 矩阵，乘的结果为 m * n 矩阵
 * 模糊蕴含积运算 Larsen
-  * $R = A\to B = A\times B = A^Tg B = \int\mu_A(x)\mu_B(y) /(x,y)$
+  * $$R = A\to B = A\times B = A^Tg B = \int\mu_A(x)\mu_B(y) /(x,y)$$
 
 蕴含概念：
 
-* A 对应一种m元模糊集 $A, \mu_A(x)$
-* B 对应一种n元模糊集 $B, \mu_B(x)$
-* 蕴含关系：m * n 元模糊集，对应隶属度函数$A\times B \to \mu_{A\to B}(x)$
+* A 对应一种m元模糊集 $$A, \mu_A(x)$$
+* B 对应一种n元模糊集 $$B, \mu_B(x)$$
+* 蕴含关系：m * n 元模糊集，对应隶属度函数$$A\times B \to \mu_{A\to B}(x)$$
 
 ### 模糊推理方法
 
 **单前提单规则**
 
 * 前提 事实(模糊集) ＋ 前提 规则(模糊蕴含)
-* 结论 (模糊集): $B' = A' \circ (A \to B)$
-* $A'$ 为一元时，$\circ$ 所表示的关系合成: 行向量 X 矩阵
+* 结论 (模糊集): $$B' = A' \circ (A \to B)$$
+* $$A'$$ 为一元时，$\circ$ 所表示的关系合成: 行向量 X 矩阵
 
 可以先计算出一部分，可得一个常数:
 
@@ -139,18 +141,17 @@ $$
 **多前提单规则**
 
 * 前提 事实 （模糊集＋模糊集）＋前提 规则（模糊蕴含）
-* 结论(模糊集): $C' = (A'\times B')\circ(A\times B\to C)$
+* 结论(模糊集): $$C' = (A'\times B')\circ(A\times B\to C)$$
 
 可以先计算出一部分
 
 **多前提多规则** (MISO)
 
 * 前提 事实（模糊集，模糊集）＋ 前提 规则（蕴含1 蕴含2)
-* 结论(模糊集): $$C'=(A'\times B')\circ(R_1\cup R_2)$$
+* 结论(模糊集): $$C'=(A'\times B')\circ(R_1\cup R_2)​$$
 
 可以先计算出一部分
 
 **MIMO**
 
 使用规则库
-
