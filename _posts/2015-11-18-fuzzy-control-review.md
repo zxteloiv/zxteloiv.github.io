@@ -109,10 +109,10 @@ $$
 **模糊蕴含的运算**
 
 * 模糊蕴含最小运算 Mamdani
-  * $$R = A\to B = A\times B = A^TB = \int\mu_A(x)\cap \mu_B(y) /(x,y)$$
+  * 蕴含关系 $$R = A\to B = A\times B = A^TB = \int\mu_A(x)\cap \mu_B(y) /(x,y)$$
   * A 为 m * 1 矩阵，乘的结果为 m * n 矩阵
 * 模糊蕴含积运算 Larsen
-  * $$R = A\to B = A\times B = A^Tg B = \int\mu_A(x)\mu_B(y) /(x,y)$$
+  * 蕴含关系 $$R = A\to B = A\times B = A^Tg B = \int\mu_A(x)\mu_B(y) /(x,y)$$
 
 蕴含概念：
 
