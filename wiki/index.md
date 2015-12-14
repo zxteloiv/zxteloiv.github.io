@@ -7,5 +7,5 @@ This directory is a public dump of all my notes. They are organized in a wiki-li
 
 ### configuration
 
-[configuration](/wiki/configuration/) is the main .
+<a href="/wiki/configuration/" target="_blank">configuration</a>: configuration notes on software, platform or something else.
 
