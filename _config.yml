@@ -8,4 +8,5 @@ twitter_username: haruki_kirigaya
 github_username:  zxteloiv
 
 # Build settings
+#markdown: redcarpet
 markdown: kramdown

@@ -48,7 +48,7 @@ If you don't want to use python binding in OpenCV and only need C/C++ interface,
 
 Search "python" in the document we may find a ruby block
 
-``` ruby
+~~~ruby
 if build.with? "python"
   py_prefix = `python-config --prefix`.chomp
   py_lib = OS.linux? ? `python-config --configdir`.chomp : "#{py_prefix}/lib"
@@ -56,7 +56,7 @@ if build.with? "python"
   args << "-DPYTHON2_LIBRARY=#{py_lib}/libpython2.7.#{dylib}"
   args << "-DPYTHON2_INCLUDE_DIR=#{py_prefix}/include/python2.7"
 end
-```
+~~~
 
 If compiled by default, opencv will use the python-config shipped with OS X. So change it to other binary as you like, mine, for example, is `/Library/Frameworks/Python.framework/Versions/2.7/bin/python-config`.
 
@@ -76,47 +76,47 @@ The crazy idea comes to my head.
 
 Firstly I signed a SSL certificate for myself. Following this [guide](http://pankajmalhotra.com/Simple-HTTPS-Server-In-Python-Using-Self-Signed-Certs/) it's easy to create a certificate file. But enter raw.githubusercontent.com when it is asking for the common name.
 
-``` bash
-openssl genrsa -des3 -out server.key 1024
+~~~bash
+openssl genrsa -des3 -out server.key 1024  
 
-openssl req -new -key server.key -out server.csr
-// when Common Name (e.g. server FQDN or YOUR name) []:raw.githubusercontent.com
+openssl req -new -key server.key -out server.csr  
+# when Common Name (e.g. server FQDN or YOUR name) []:raw.githubusercontent.com  
 
-openssl x509 -req -days 1024 -in server.csr -signkey server.key -out server.crt
+openssl x509 -req -days 1024 -in server.csr -signkey server.key -out server.crt  
 
 cat server.crt server.key > server.pem
-```
+~~~
 
 Then I import the private key into System Keychain following this [guide](https://www.digicert.com/ssl-support/p12-import-export-mac-mavericks-server.htm). Since I use python directly to start a simple https server there's no need to assign the certificate to the website as in the tutorial. 
 
 Then put the ippicv_macosx_20151201.tgz file to correct path.
 
-``` bash
-dir=Itseez/opencv_3rdparty/81a676001ca8075ada498583e4166079e5744668/ippicv
-mkdir -p $dir
-mv ippicv_macosx_20151201.tgz $dir/
-```
+~~~bash
+dir=Itseez/opencv_3rdparty/81a676001ca8075ada498583e4166079e5744668/ippicv  
+mkdir -p $dir  
+mv ippicv_macosx_20151201.tgz $dir/  
+~~~
 
 Run a https server in python as 
 
-``` python
-#!/usr/bin/python
-
-import BaseHTTPServer, SimpleHTTPServer
-import ssl
-
-httpd = BaseHTTPServer.HTTPServer(('localhost', 443), SimpleHTTPServer.SimpleHTTPRequestHandler)
-httpd.socket = ssl.wrap_socket (httpd.socket, certfile='/path/to/server.pem', server_side=True)
-httpd.serve_forever()
-```
+~~~python
+#!/usr/bin/python  
+  
+import BaseHTTPServer, SimpleHTTPServer  
+import ssl  
+  
+httpd = BaseHTTPServer.HTTPServer(('localhost', 443), SimpleHTTPServer.SimpleHTTPRequestHandler)  
+httpd.socket = ssl.wrap_socket (httpd.socket, certfile='/path/to/server.pem', server_side=True)  
+httpd.serve_forever()  
+~~~
 
 Since 443, 80 and other small ports are reserved by OS X, we have to run the script with *sudo*.
 
 Finally `sudo edit /etc/hosts` file and append this line
 
-``` 
+~~~ 
 127.0.0.1 raw.githubusercontent.com
-```
+~~~
 
 Now we finished hijacking the *raw.githubusercontent.com* domain locally, run the `brew install opencv3 --without-numpy --verbose` again we can successfully brewed it from source.
 
