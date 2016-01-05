@@ -12,6 +12,7 @@ This blog is inspired by an excellent slides *From Sequence Modeling to Translat
 ## Why language models
 
 When it comes to the NLP problem, we often want to know how **likely** a sentence is, that is, for a sentence $$ s=w_1w_2...w_T $$, we want to model the probability:
+
 $$
 P(s) = P(w_1, w_2, ..., w_T)
 $$
@@ -33,7 +34,7 @@ where each probability on the right is computed by counting the occurrence of wo
 
 $$
 P(w_i \vert w_{i-1}) = \frac{count(w_{i-1} w_i)}{\sum_j count(w_{i-1} w_j)}
-$$.
+$$
 
 n-gram models are facing two potential problems:
 
@@ -55,6 +56,7 @@ There're quite a lot of smoothing methods and people have done many comparisions
 ## Move to Neural Network Language Models(NNLM)
 
 ### Relax the 2nd assumption
+
 When we convert the non-parametric estimator to a parametric one, we disgard the previous n-gram probability and turn to a function parameterized by, say, theta.
 
 $$
@@ -109,6 +111,7 @@ To train such an RNN, use Back-Propagation Through Time(BPTT). I haven't did any
 ## Tips for RNN
 
 RNN does have new problems, too.
+
 * **Gradient Vanishing** may occur when the train is long.
 * There's also so-called **Gradient Exploding**, too.
 * RNN may not remember things with too long distance.
@@ -123,4 +126,3 @@ Theano gives the automatic differentiation, too.
 
 * Kyunghyun Cho. From Sequence Modeling to Translation. 2015. https://drive.google.com/file/d/0B16RwCMQqrtdNEhwbHN2bXJzdXM/view
 * 宗成庆. 统计自然语言处理（第2版）. 清华大学出版社, 2013. Douban. Web. 21 Oct. 2015.
-
