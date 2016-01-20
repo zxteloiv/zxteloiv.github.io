@@ -22,27 +22,207 @@
   <style> .text-cell {font-size: 15px;}.code-cell {font-size: 12px;}.markdown-cell {font-size: 15px;}.latex-cell {font-size: 15px;}</style>
 </head>
 <body>
-  <div id="nav"><div>Next: <a href='BeautifulSoup4.html'>BeautifulSoup4</a>, Up: <a href='index.html'>Index</a></div></div>
+  <div id="nav"><div>Previous: <a href='Port Exhausted When Accessing Local Server.html'>Port Exhausted When Accessing Local Server</a>, Up: <a href='index.html'>Index</a></div></div>
   <div id="titlearea">
-    <h2>attention based model</h2>
+    <h2>Treebank Annotator Tags</h2>
   </div>
-  <div id="contentarea"><div class="cell markdown-cell"><h3 id="concepts">concepts</h3>
-<p>NTM relies on only the last state</p>
-<p>attention is an idea that uses a<strong> weighted combination of input states</strong></p>
-<p>like a memory reference where the access is soft.</p>
-<p><a href="http://www.wildml.com/2016/01/attention-and-memory-in-deep-learning-and-nlp/">attention and memory in deep learning and nlp</a></p>
-<h3 id="application">application</h3>
-<p><a href="http://arxiv.org/abs/1502.03044">Show, Attend and Tell</a> for image labelling</p>
-<p><a href="http://arxiv.org/abs/1412.7449">Grammar as a Foreign Language</a> for language parsing</p>
-<p><a href="http://arxiv.org/abs/1506.03340">Teaching Machines to Read and Comprehend</a> for QA</p>
-<p><a href="http://arxiv.org/abs/1503.08895">End-to-End Memory Networks</a> allow the network to read same input sequence multiple times before making an output, updating the memory contents at each step. </p>
-<p><a href="https://github.com/dennybritz/deeplearning-papernotes/blob/master/neural-turing-machines.md">Neural Turing Machines</a> use a similar form of memory mechanism, but with a more sophisticated type of addressing that using both content-based (like here) and location-based addressing, allowing the network to learn addressing pattern to execute simple computer programs, like sorting algorithms.</p>
-<p>a clearer distinction between memory and attention mechanisms, perhaps along the lines of <a href="http://arxiv.org/abs/1505.00521">Reinforcement Learning Neural Turing Machines</a>, which try to learn access patterns to deal with external interfaces.</p>
-<h3 id="further-reading">further reading</h3>
-<p><a href="http://www.zhihu.com/question/36591394">zhihu question</a></p>
+  <div id="contentarea"><div class="cell markdown-cell"><p><strong>all:</strong> word-level, phrase-level, ...<br><a href="http://www.surdeanu.info/mihai/teaching/ista555-fall13/readings/PennTreebankConstituents.html">surdeanu.info/mihai/</a></p>
+<p><strong>Treebank home:</strong> <a href="http://www.cis.upenn.edu/~treebank/">http://www.cis.upenn.edu/~treebank/</a></p>
+<p><strong>POS tags:</strong><br><a href="https://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html">https://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html</a></p>
+<table>
+<thead>
+<tr>
+<th>Number</th>
+<th>Tag</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.</td>
+<td>CC</td>
+<td>Coordinating conjunction</td>
+</tr>
+<tr>
+<td>2.</td>
+<td>CD</td>
+<td>Cardinal number</td>
+</tr>
+<tr>
+<td>3.</td>
+<td>DT</td>
+<td>Determiner</td>
+</tr>
+<tr>
+<td>4.</td>
+<td>EX</td>
+<td>Existential <em>there </em></td>
+</tr>
+<tr>
+<td>5.</td>
+<td>FW</td>
+<td>Foreign word</td>
+</tr>
+<tr>
+<td>6.</td>
+<td>IN</td>
+<td>Preposition or subordinating conjunction</td>
+</tr>
+<tr>
+<td>7.</td>
+<td>JJ</td>
+<td>Adjective</td>
+</tr>
+<tr>
+<td>8.</td>
+<td>JJR</td>
+<td>Adjective, comparative</td>
+</tr>
+<tr>
+<td>9.</td>
+<td>JJS</td>
+<td>Adjective, superlative</td>
+</tr>
+<tr>
+<td>10.</td>
+<td>LS</td>
+<td>List item marker</td>
+</tr>
+<tr>
+<td>11.</td>
+<td>MD</td>
+<td>Modal</td>
+</tr>
+<tr>
+<td>12.</td>
+<td>NN</td>
+<td>Noun, singular or mass</td>
+</tr>
+<tr>
+<td>13.</td>
+<td>NNS</td>
+<td>Noun, plural</td>
+</tr>
+<tr>
+<td>14.</td>
+<td>NNP</td>
+<td>Proper noun, singular</td>
+</tr>
+<tr>
+<td>15.</td>
+<td>NNPS</td>
+<td>Proper noun, plural</td>
+</tr>
+<tr>
+<td>16.</td>
+<td>PDT</td>
+<td>Predeterminer</td>
+</tr>
+<tr>
+<td>17.</td>
+<td>POS</td>
+<td>Possessive ending</td>
+</tr>
+<tr>
+<td>18.</td>
+<td>PRP</td>
+<td>Personal pronoun</td>
+</tr>
+<tr>
+<td>19.</td>
+<td>PRP$</td>
+<td>Possessive pronoun</td>
+</tr>
+<tr>
+<td>20.</td>
+<td>RB</td>
+<td>Adverb</td>
+</tr>
+<tr>
+<td>21.</td>
+<td>RBR</td>
+<td>Adverb, comparative</td>
+</tr>
+<tr>
+<td>22.</td>
+<td>RBS</td>
+<td>Adverb, superlative</td>
+</tr>
+<tr>
+<td>23.</td>
+<td>RP</td>
+<td>Particle</td>
+</tr>
+<tr>
+<td>24.</td>
+<td>SYM</td>
+<td>Symbol</td>
+</tr>
+<tr>
+<td>25.</td>
+<td>TO</td>
+<td><em>to</em></td>
+</tr>
+<tr>
+<td>26.</td>
+<td>UH</td>
+<td>Interjection</td>
+</tr>
+<tr>
+<td>27.</td>
+<td>VB</td>
+<td>Verb, base form</td>
+</tr>
+<tr>
+<td>28.</td>
+<td>VBD</td>
+<td>Verb, past tense</td>
+</tr>
+<tr>
+<td>29.</td>
+<td>VBG</td>
+<td>Verb, gerund or present participle</td>
+</tr>
+<tr>
+<td>30.</td>
+<td>VBN</td>
+<td>Verb, past participle</td>
+</tr>
+<tr>
+<td>31.</td>
+<td>VBP</td>
+<td>Verb, non-3rd person singular present</td>
+</tr>
+<tr>
+<td>32.</td>
+<td>VBZ</td>
+<td>Verb, 3rd person singular present</td>
+</tr>
+<tr>
+<td>33.</td>
+<td>WDT</td>
+<td>Wh-determiner</td>
+</tr>
+<tr>
+<td>34.</td>
+<td>WP</td>
+<td>Wh-pronoun</td>
+</tr>
+<tr>
+<td>35.</td>
+<td>WP$</td>
+<td>Possessive wh-pronoun</td>
+</tr>
+<tr>
+<td>36.</td>
+<td>WRB</td>
+<td>Wh-adverb</td>
+</tr>
+</tbody>
+</table>
 </div></div>
   <script>document.body.onkeyup = function(e) {
-if (e.keyCode === 39) window.location.href = 'BeautifulSoup4.html';
+if (e.keyCode === 37) window.location.href = 'Port Exhausted When Accessing Local Server.html';
 }</script>
 </body>
 </html>

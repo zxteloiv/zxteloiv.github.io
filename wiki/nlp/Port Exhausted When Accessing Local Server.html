@@ -22,27 +22,22 @@
   <style> .text-cell {font-size: 15px;}.code-cell {font-size: 12px;}.markdown-cell {font-size: 15px;}.latex-cell {font-size: 15px;}</style>
 </head>
 <body>
-  <div id="nav"><div>Next: <a href='BeautifulSoup4.html'>BeautifulSoup4</a>, Up: <a href='index.html'>Index</a></div></div>
+  <div id="nav"><div>Next: <a href='Treebank Annotator Tags.html'>Treebank Annotator Tags</a>, Previous: <a href='Penn Treebank II Constituent Tags.html'>Penn Treebank II Constituent Tags</a>, Up: <a href='index.html'>Index</a></div></div>
   <div id="titlearea">
-    <h2>attention based model</h2>
+    <h2>Port Exhausted When Accessing Local Server</h2>
   </div>
-  <div id="contentarea"><div class="cell markdown-cell"><h3 id="concepts">concepts</h3>
-<p>NTM relies on only the last state</p>
-<p>attention is an idea that uses a<strong> weighted combination of input states</strong></p>
-<p>like a memory reference where the access is soft.</p>
-<p><a href="http://www.wildml.com/2016/01/attention-and-memory-in-deep-learning-and-nlp/">attention and memory in deep learning and nlp</a></p>
-<h3 id="application">application</h3>
-<p><a href="http://arxiv.org/abs/1502.03044">Show, Attend and Tell</a> for image labelling</p>
-<p><a href="http://arxiv.org/abs/1412.7449">Grammar as a Foreign Language</a> for language parsing</p>
-<p><a href="http://arxiv.org/abs/1506.03340">Teaching Machines to Read and Comprehend</a> for QA</p>
-<p><a href="http://arxiv.org/abs/1503.08895">End-to-End Memory Networks</a> allow the network to read same input sequence multiple times before making an output, updating the memory contents at each step. </p>
-<p><a href="https://github.com/dennybritz/deeplearning-papernotes/blob/master/neural-turing-machines.md">Neural Turing Machines</a> use a similar form of memory mechanism, but with a more sophisticated type of addressing that using both content-based (like here) and location-based addressing, allowing the network to learn addressing pattern to execute simple computer programs, like sorting algorithms.</p>
-<p>a clearer distinction between memory and attention mechanisms, perhaps along the lines of <a href="http://arxiv.org/abs/1505.00521">Reinforcement Learning Neural Turing Machines</a>, which try to learn access patterns to deal with external interfaces.</p>
-<h3 id="further-reading">further reading</h3>
-<p><a href="http://www.zhihu.com/question/36591394">zhihu question</a></p>
+  <div id="contentarea"><div class="cell markdown-cell"><p>File "/home/zxteloiv/local/python27/lib/python2.7/site-packages/requests/adapters.py", line 437, in send<br>          raise ConnectionError(e, request=request)<br>        requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=9000): Max retries exceeded with url: /?properties=%7B%27outputFormat%27%3A+%27json%27%2C+%27annotators%27%3A+%27tokenize%2Cssplit%2Cpos%27%7D (Caused by NewConnectionError('<requests.packages.urllib3.connection.httpconnection object="" at="" 0x7fe7c17b7910="">: Failed to establish a new connection: [Errno 99] Cannot assign requested address',))</requests.packages.urllib3.connection.httpconnection></p>
+<p><a href="http://stackoverflow.com/questions/11981933/python-urllib2-cannot-assign-requested-address">stackoverflow.com/questions/11981933/</a></p>
+<p>solve:</p>
+<pre><code class="lang-bash"><div class="ace-chrome"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">sudo</span>&nbsp;<span class="ace_identifier">sysctl</span>&nbsp;<span class="ace_identifier">net</span>.<span class="ace_identifier">ipv4</span>.<span class="ace_variable">tcp_tw_recycle=</span><span class="ace_constant ace_numeric">1</span>
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">sudo</span>&nbsp;<span class="ace_identifier">sysctl</span>&nbsp;<span class="ace_identifier">net</span>.<span class="ace_identifier">ipv4</span>.<span class="ace_variable">tcp_max_orphans=</span><span class="ace_constant ace_numeric">8192</span>
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">sudo</span>&nbsp;<span class="ace_identifier">sysctl</span>&nbsp;<span class="ace_identifier">net</span>.<span class="ace_identifier">ipv4</span>.<span class="ace_variable">tcp_orphan_retries=</span><span class="ace_constant ace_numeric">1</span>
+</div></div></div>
+</code></pre>
 </div></div>
   <script>document.body.onkeyup = function(e) {
-if (e.keyCode === 39) window.location.href = 'BeautifulSoup4.html';
+if (e.keyCode === 39) window.location.href = 'Treebank Annotator Tags.html';
+if (e.keyCode === 37) window.location.href = 'Penn Treebank II Constituent Tags.html';
 }</script>
 </body>
 </html>
