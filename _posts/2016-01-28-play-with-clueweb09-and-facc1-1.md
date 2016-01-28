@@ -15,11 +15,11 @@ math_support: mathjax
 
 这是09年爬虫两个月内爬取的网页数据。它的子集已经用于很多工作当中。全集被用两个 3T 的硬盘保存并邮寄过来。压缩后的内容大约 5T。详细的情况可以查看[官方网站](http://www.lemurproject.org/clueweb09.php/)。		
 
-> 例如英文的就在第一块硬盘中建立了 `ClueWeb09_English_1` 到`ClueWeb09_English_10` 10 个文件夹，全部包括了 en0000 ~ en0133 和 enwp00 ~ enwp03 共 137 个子文件夹，每个子文件夹下至多共有 00.warc.gz ~ 99.warc.gz 共计 100 个文件。
+> 例如英文的就在第一块硬盘中建立了 ClueWeb09_English_1 到ClueWeb09_English_10 10 个文件夹，全部包括了 en0000 ~ en0133 和 enwp00 ~ enwp03 共 137 个子文件夹，每个子文件夹下至多共有 00.warc.gz ~ 99.warc.gz 共计 100 个文件。
 
 同时也有人在 ClueWeb09 之上做了相关的工作产出了一些相关的数据，这次我用到的 [FACC1](http://lemurproject.org/clueweb09/FACC1/) 就是其一。FACC1 在原网页的基础上标注出了网页中的大量实体词，并标注了对应的 [Freebase](https://www.freebase.com/) 节点。
 
-> FACC1 的标注只有英文，有 `ClueWeb09_English_1.tgz` 到 `ClueWeb09_English_10.tgz` 对应原数据中的每个大文件夹，解压后分别对应到每个 00~99.warc.gz 有对应的 00~99.anns.tsv
+> FACC1 的标注只有英文，有 ClueWeb09_English_1.tgz 到 ClueWeb09_English_10.tgz 对应原数据中的每个大文件夹，解压后分别对应到每个 00~99.warc.gz 有对应的 00~99.anns.tsv
 
 #### 数据集文件格式
 
@@ -106,7 +106,7 @@ tar (Tape ARchive) 是 POSIX 标准之一的内容，没有找到免费的标准
 
 对于 ClueWeb09 WARC 格式的文件有了解析工具：https://github.com/cdegroc/warc-clueweb，由于它考虑了上面提到的格式错误，并且使用内置的 GzipFile 模块，对 gzip 文件对象做处理，因此对 warc 和 warc.gz 文件都可以进行透明处理。源代码不多，可以简单读一下。经过这些包装以后，使用起来非常简单：
 
-``` python
+~~~python
 import warc
 f = warc.open("some.warc[.gz]", "rb")
 
@@ -123,7 +123,7 @@ while record is not None:
 print record # 全都打出来
 print record.header # 打印出 record warc header
 print record.payload # HTML 内容(包含 HTML 头信息)
-```
+~~~
 
 在自己处理 Gzip 的过程中，可以参考 warc 用 GzipFile 模块的代码作为样例。
 
@@ -131,7 +131,7 @@ FACC1 使用的是 tar.gz 方式压缩，因此光使用 GzipFile 解压还不�
 
 TarFile 对象遍历迭代器得到的是 TarInfo 对象，对应一个 member，可以直接调用模块解压在当前路径或给定路径（就像在命令行用 tar 工具一样），但是在处理时我们需要操作文件读取内容，不能直接解压在硬盘上，因此需要用 TarFile.extractfile()
 
-``` python
+~~~python
 import tarfile
 
 tar = tarfile.open("some.tar[.gz]", "r[:gz]")
@@ -140,4 +140,4 @@ for member in tar:
   fileobj = tar.extractfile(member)
   line = fileobj.readline() # 从压缩后的一个文件中读取一行
   pass
-```
+~~~
