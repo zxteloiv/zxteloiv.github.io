@@ -4,7 +4,7 @@ title:  "ClueWeb09 数据集把玩日记（下）"
 date:   2016-01-29 14:00
 tags: learning ClueWeb09 dataset 
 categories: chn learning
-math_support: mathjax
+math_support: 
 ---
 
 这篇主要包括怎么抽取一个网页的内容，和怎么发现瓶颈并优化性能的。代码都放在 [GitHub](https://github.com/zxteloiv/ClueWeb09-scripts) 上面。有的正则表达式和代码逻辑直接看代码可能更清楚一点。前一篇在此：[ClueWeb09 数据集把玩日记（上）](http://libzx.so/chn/learning/2016/01/28/play-with-clueweb09-and-facc1-1.html)
@@ -24,11 +24,11 @@ math_support: mathjax
 唯一的办法就是直接使用 bs.get_text，不进行节点遍历。经过多次测试，总结出一些原则：
 
 - 如果 html 内容以  HTTP/1.1 200 OK 等头信息开头，全部去掉。
-- 去掉 html 中 <script [type="text/javascript"]> ... </script> 和 <style> ... </style> 标签的内容
-- 去掉所有的注释 <!-- ... -->
+- 去掉 html 中 &lt;script [type="text/javascript"]&gt; ... &lt;/script&gt; 和 &lt;style&gt; ... &lt;/style&gt;标签的内容
+- 去掉所有的注释 &lt;!-- ... --&gt;
 - 去掉所有长度为0的句子
 - 把 u'\xa0' 换成普通空格，这是在 bs 解析时把 html 中的 `& nbsp;` 等 HTML entities 进行替换所转换得到的空格，在 ASCII Table 中有规定
-- 因为 HTML 不会把 <br> 以外的换行解释为换行，故把连续出现的多个 \n, \t, \r, 空格等等替换成单个空格。
+- 因为 HTML 不会把 &lt;br&gt; 以外的换行解释为换行，故把连续出现的多个 \n, \t, \r, 空格等等替换成单个空格。
 
 在经过这些处理之后，把提取出的段落用 \n 分割，可以用 python requests wrapper 交给 CoreNLP Server 去处理。这部分使用了大量正则表达式进行处理，如果需要可以参考一下 re 模块的说明，例如 .*? 加了问号可以表示non-greedy 模式的 match、(?is) 开头可以空匹配但是指定整个表达式的匹配约定等等。
 
