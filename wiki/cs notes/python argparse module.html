@@ -22,17 +22,28 @@
   <style> .text-cell {font-size: 15px;}.code-cell {font-size: 12px;}.markdown-cell {font-size: 15px;}.latex-cell {font-size: 15px;}</style>
 </head>
 <body>
-  <div id="nav"><div>Next: <a href='dd status.html'>dd status</a>, Previous: <a href='build python 2.7.11.html'>build python 2.7.11</a>, Up: <a href='index.html'>Index</a></div></div>
+  <div id="nav"><div>Next: <a href='python script framework.html'>python script framework</a>, Previous: <a href='OCR tutorial.html'>OCR tutorial </a>, Up: <a href='index.html'>Index</a></div></div>
   <div id="titlearea">
-    <h2>create bootable ubuntu on osx</h2>
+    <h2>python argparse module</h2>
   </div>
-  <div id="contentarea"><div class="cell markdown-cell"><p>refer to <a href="http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-mac-osx">How to create a bootable USB stick on OS X</a></p>
-<ol>
-<li>download ubuntu iso</li><li><code>hdiutil convert -format UDRW -o ~/path/to/target.img ~/path/to/ubuntu.iso</code></li><li><code>diskutil list</code></li><li>insert usb disk</li><li><code>diskutil list</code> again</li><li><code>diskutil unmountDisk /dev/diskN</code></li><li><code>sudo dd if=/path/to/downloaded.img of=/dev/diskN bs=1m</code> overwrite usb disk</li><li><code>diskutil eject /dev/diskN</code></li></ol>
+  <div id="contentarea"><div class="cell markdown-cell"><h3 id="parser">parser</h3>
+<p>parser is a processor for all the arguments</p>
+<p>description:</p>
+<pre><div class="ace-chrome"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_keyword">import</span>&nbsp;<span class="ace_identifier">argparse</span>
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">parser</span>&nbsp;<span class="ace_keyword ace_operator">=</span>&nbsp;<span class="ace_identifier">argparse</span>.<span class="ace_identifier">ArgumentParser</span><span class="ace_paren ace_lparen">(</span><span class="ace_identifier">description</span><span class="ace_keyword ace_operator">=</span><span class="ace_string">"program&nbsp;description"</span><span class="ace_paren ace_rparen">)</span>
+</div></div></div></pre><h3 id="add-argument">add argument</h3>
+<pre><div class="ace-chrome"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">parser</span>.<span class="ace_identifier">add_argument</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'foo'</span>,&nbsp;<span class="ace_comment">#&nbsp;name,&nbsp;alternatives&nbsp;are&nbsp;"--foo",&nbsp;"-f")</span>
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">parser</span>.<span class="ace_identifier">add_argument</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'--foo'</span>,&nbsp;<span class="ace_support ace_function">type</span><span class="ace_keyword ace_operator">=</span><span class="ace_support ace_function">int</span><span class="ace_paren ace_rparen">)</span>
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">parser</span>.<span class="ace_identifier">add_argument</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'--foo'</span>,&nbsp;<span class="ace_support ace_function">type</span><span class="ace_keyword ace_operator">=</span><span class="ace_identifier">file</span><span class="ace_paren ace_rparen">)</span>
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">parser</span>.<span class="ace_identifier">add_argument</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'--width'</span>,&nbsp;<span class="ace_identifier">default</span><span class="ace_keyword ace_operator">=</span><span class="ace_constant ace_numeric">10.5</span>,&nbsp;<span class="ace_support ace_function">type</span><span class="ace_keyword ace_operator">=</span><span class="ace_support ace_function">int</span><span class="ace_paren ace_rparen">)</span>
+</div></div></div></pre><h3 id="reference">reference</h3>
+<p><a href="https://docs.python.org/2/library/argparse.html">https://docs.python.org/2/library/argparse.html</a></p>
 </div></div>
   <script>document.body.onkeyup = function(e) {
-if (e.keyCode === 39) window.location.href = 'dd status.html';
-if (e.keyCode === 37) window.location.href = 'build python 2.7.11.html';
+if (e.keyCode === 39) window.location.href = 'python script framework.html';
+if (e.keyCode === 37) window.location.href = 'OCR tutorial.html';
 }</script>
 </body>
 </html>

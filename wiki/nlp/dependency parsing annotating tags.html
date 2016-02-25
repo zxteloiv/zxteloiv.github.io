@@ -22,17 +22,23 @@
   <style> .text-cell {font-size: 15px;}.code-cell {font-size: 12px;}.markdown-cell {font-size: 15px;}.latex-cell {font-size: 15px;}</style>
 </head>
 <body>
-  <div id="nav"><div>Next: <a href='dd status.html'>dd status</a>, Previous: <a href='build python 2.7.11.html'>build python 2.7.11</a>, Up: <a href='index.html'>Index</a></div></div>
+  <div id="nav"><div>Next: <a href='entity-linking.html'>entity-linking</a>, Previous: <a href='Lecture  Discovering Keywords for Search, Covariate Shift, and Lifelong Learning.html'>Lecture: Discovering Keywords for Search, Covariate Shift, and Lifelong Learning</a>, Up: <a href='index.html'>Index</a></div></div>
   <div id="titlearea">
-    <h2>create bootable ubuntu on osx</h2>
+    <h2>dependency parsing annotating tags</h2>
   </div>
-  <div id="contentarea"><div class="cell markdown-cell"><p>refer to <a href="http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-mac-osx">How to create a bootable USB stick on OS X</a></p>
-<ol>
-<li>download ubuntu iso</li><li><code>hdiutil convert -format UDRW -o ~/path/to/target.img ~/path/to/ubuntu.iso</code></li><li><code>diskutil list</code></li><li>insert usb disk</li><li><code>diskutil list</code> again</li><li><code>diskutil unmountDisk /dev/diskN</code></li><li><code>sudo dd if=/path/to/downloaded.img of=/dev/diskN bs=1m</code> overwrite usb disk</li><li><code>diskutil eject /dev/diskN</code></li></ol>
+  <div id="contentarea"><div class="cell markdown-cell"><h3 id="universial-dependencies">Universial Dependencies</h3>
+<p><a href="http://universaldependencies.org/u/dep/index.html">http://universaldependencies.org/u/dep/index.html</a></p>
+<p><a href="https://github.com/UniversalDependencies/docs">https://github.com/UniversalDependencies/docs</a></p>
+<p><a href="http://universaldependencies.org/">http://universaldependencies.org/</a></p>
+<h4 id="conll-u-format">CoNLL-U Format</h4>
+<p><a href="http://universaldependencies.org/format.html">http://universaldependencies.org/format.html</a><br><a href="https://github.com/spyysalo/conllu.py">https://github.com/spyysalo/conllu.py</a></p>
+<h3 id="stanford-dependencies">Stanford Dependencies</h3>
+<p><a href="http://nlp.stanford.edu/software/stanford-dependencies.shtml#English">http://nlp.stanford.edu/software/stanford-dependencies.shtml#English</a></p>
+<p><strong>neural networks depparse</strong><br><a href="http://nlp.stanford.edu/software/nndep.shtml">http://nlp.stanford.edu/software/nndep.shtml</a></p>
 </div></div>
   <script>document.body.onkeyup = function(e) {
-if (e.keyCode === 39) window.location.href = 'dd status.html';
-if (e.keyCode === 37) window.location.href = 'build python 2.7.11.html';
+if (e.keyCode === 39) window.location.href = 'entity-linking.html';
+if (e.keyCode === 37) window.location.href = 'Lecture  Discovering Keywords for Search, Covariate Shift, and Lifelong Learning.html';
 }</script>
 </body>
 </html>

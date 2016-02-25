@@ -22,17 +22,22 @@
   <style> .text-cell {font-size: 15px;}.code-cell {font-size: 12px;}.markdown-cell {font-size: 15px;}.latex-cell {font-size: 15px;}</style>
 </head>
 <body>
-  <div id="nav"><div>Next: <a href='dd status.html'>dd status</a>, Previous: <a href='build python 2.7.11.html'>build python 2.7.11</a>, Up: <a href='index.html'>Index</a></div></div>
+  <div id="nav"><div>Next: <a href='HDF5 storage format.html'>HDF5 storage format</a>, Previous: <a href='create bootable ubuntu on osx.html'>create bootable ubuntu on osx</a>, Up: <a href='index.html'>Index</a></div></div>
   <div id="titlearea">
-    <h2>create bootable ubuntu on osx</h2>
+    <h2>dd status</h2>
   </div>
-  <div id="contentarea"><div class="cell markdown-cell"><p>refer to <a href="http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-mac-osx">How to create a bootable USB stick on OS X</a></p>
-<ol>
-<li>download ubuntu iso</li><li><code>hdiutil convert -format UDRW -o ~/path/to/target.img ~/path/to/ubuntu.iso</code></li><li><code>diskutil list</code></li><li>insert usb disk</li><li><code>diskutil list</code> again</li><li><code>diskutil unmountDisk /dev/diskN</code></li><li><code>sudo dd if=/path/to/downloaded.img of=/dev/diskN bs=1m</code> overwrite usb disk</li><li><code>diskutil eject /dev/diskN</code></li></ol>
+  <div id="contentarea"><div class="cell markdown-cell"><p>linux command dd<br><code>[sudo] dd if=blabla of=blabla bs=1M status=progress</code></p>
+<p>on mac seems status parameter can not be specified explicitly</p>
+<p><code>[sudo] dd if=blabla of=blabla bs=1M</code> this is enough</p>
+<p>send SIGINFO signal to see how it works now</p>
+<pre><div class="ace-chrome"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">pgrep</span>&nbsp;<span class="ace_keyword ace_operator">-</span><span class="ace_identifier">l</span>&nbsp;<span class="ace_string ace_start">'</span><span class="ace_string">^dd$</span><span class="ace_string ace_end">'</span>
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_support ace_function ace_builtin">kill</span>&nbsp;<span class="ace_keyword ace_operator">-</span><span class="ace_identifier">SIGINFO</span>&nbsp;<span class="ace_constant ace_numeric">8789</span>
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">watch</span>&nbsp;<span class="ace_keyword ace_operator">-</span><span class="ace_identifier">n</span>&nbsp;<span class="ace_constant ace_numeric">10</span>&nbsp;<span class="ace_support ace_function ace_builtin">kill</span>&nbsp;<span class="ace_keyword ace_operator">-</span><span class="ace_identifier">USRINFO</span>&nbsp;<span class="ace_constant ace_numeric">8789</span>
+</div></div></div></pre><p>reference<br><a href="http://linuxcommando.blogspot.com/2008/06/show-progress-during-dd-copy.html">show progress during dd</a></p>
 </div></div>
   <script>document.body.onkeyup = function(e) {
-if (e.keyCode === 39) window.location.href = 'dd status.html';
-if (e.keyCode === 37) window.location.href = 'build python 2.7.11.html';
+if (e.keyCode === 39) window.location.href = 'HDF5 storage format.html';
+if (e.keyCode === 37) window.location.href = 'create bootable ubuntu on osx.html';
 }</script>
 </body>
 </html>

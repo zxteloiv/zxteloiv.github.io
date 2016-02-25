@@ -22,17 +22,23 @@
   <style> .text-cell {font-size: 15px;}.code-cell {font-size: 12px;}.markdown-cell {font-size: 15px;}.latex-cell {font-size: 15px;}</style>
 </head>
 <body>
-  <div id="nav"><div>Next: <a href='dd status.html'>dd status</a>, Previous: <a href='build python 2.7.11.html'>build python 2.7.11</a>, Up: <a href='index.html'>Index</a></div></div>
+  <div id="nav"><div>Next: <a href='multi-modal concept.html'>multi-modal concept</a>, Previous: <a href='optimization. ncg.html'>optimization. ncg</a>, Up: <a href='index.html'>Index</a></div></div>
   <div id="titlearea">
-    <h2>create bootable ubuntu on osx</h2>
+    <h2>Deep Learning toolkit</h2>
   </div>
-  <div id="contentarea"><div class="cell markdown-cell"><p>refer to <a href="http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-mac-osx">How to create a bootable USB stick on OS X</a></p>
-<ol>
-<li>download ubuntu iso</li><li><code>hdiutil convert -format UDRW -o ~/path/to/target.img ~/path/to/ubuntu.iso</code></li><li><code>diskutil list</code></li><li>insert usb disk</li><li><code>diskutil list</code> again</li><li><code>diskutil unmountDisk /dev/diskN</code></li><li><code>sudo dd if=/path/to/downloaded.img of=/dev/diskN bs=1m</code> overwrite usb disk</li><li><code>diskutil eject /dev/diskN</code></li></ol>
+  <div id="contentarea"><div class="cell markdown-cell"><h3 id="tensorflow">TensorFlow</h3>
+<p>...<br>Introduction to TensorFlow<br><a href="https://docs.google.com/presentation/d/1oB_U_JagxWQdQJlLD80XlNk6fuv42bHV0hfDAPGAbrc/edit#slide=id.p">https://docs.google.com/presentation/d/1oB_U_JagxWQdQJlLD80XlNk6fuv42bHV0hfDAPGAbrc/edit#slide=id.p</a><br><a href="https://github.com/hans/ipython-notebooks/blob/master/tf/TF%20tutorial.ipynb">https://github.com/hans/ipython-notebooks/blob/master/tf/TF%20tutorial.ipynb</a></p>
+<p>fluent tensorflow<br><a href="https://github.com/google/prettytensor">https://github.com/google/prettytensor</a></p>
+<h3 id="cntk-by-ms">CNTK by MS</h3>
+<p><a href="http://www.cntk.ai/">http://www.cntk.ai/</a></p>
+<h3 id="mxnet">mxnet</h3>
+<p><a href="https://www.kaggle.com/c/second-annual-data-science-bowl/forums/t/18079/end-to-end-deep-learning-tutorial-0-0392/">https://www.kaggle.com/c/second-annual-data-science-bowl/forums/t/18079/end-to-end-deep-learning-tutorial-0-0392/</a><br>kaggle tutorial<br><a href="https://github.com/dmlc/mxnet/tree/master/example/kaggle-ndsb2">https://github.com/dmlc/mxnet/tree/master/example/kaggle-ndsb2</a></p>
+<p>MXNet设计和实现简介:<br><a href="https://github.com/dmlc/mxnet/issues/797">https://github.com/dmlc/mxnet/issues/797</a></p>
+<p>Deep learning for hackers with MXnet (2): Neural art<br><a href="https://no2147483647.wordpress.com/2015/12/21/deep-learning-for-hackers-with-mxnet-2/">https://no2147483647.wordpress.com/2015/12/21/deep-learning-for-hackers-with-mxnet-2/</a></p>
 </div></div>
   <script>document.body.onkeyup = function(e) {
-if (e.keyCode === 39) window.location.href = 'dd status.html';
-if (e.keyCode === 37) window.location.href = 'build python 2.7.11.html';
+if (e.keyCode === 39) window.location.href = 'multi-modal concept.html';
+if (e.keyCode === 37) window.location.href = 'optimization. ncg.html';
 }</script>
 </body>
 </html>

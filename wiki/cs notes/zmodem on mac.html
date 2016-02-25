@@ -22,17 +22,14 @@
   <style> .text-cell {font-size: 15px;}.code-cell {font-size: 12px;}.markdown-cell {font-size: 15px;}.latex-cell {font-size: 15px;}</style>
 </head>
 <body>
-  <div id="nav"><div>Next: <a href='dd status.html'>dd status</a>, Previous: <a href='build python 2.7.11.html'>build python 2.7.11</a>, Up: <a href='index.html'>Index</a></div></div>
+  <div id="nav"><div>Previous: <a href='vim reference.html'>vim reference</a>, Up: <a href='index.html'>Index</a></div></div>
   <div id="titlearea">
-    <h2>create bootable ubuntu on osx</h2>
+    <h2>zmodem on mac</h2>
   </div>
-  <div id="contentarea"><div class="cell markdown-cell"><p>refer to <a href="http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-mac-osx">How to create a bootable USB stick on OS X</a></p>
-<ol>
-<li>download ubuntu iso</li><li><code>hdiutil convert -format UDRW -o ~/path/to/target.img ~/path/to/ubuntu.iso</code></li><li><code>diskutil list</code></li><li>insert usb disk</li><li><code>diskutil list</code> again</li><li><code>diskutil unmountDisk /dev/diskN</code></li><li><code>sudo dd if=/path/to/downloaded.img of=/dev/diskN bs=1m</code> overwrite usb disk</li><li><code>diskutil eject /dev/diskN</code></li></ol>
+  <div id="contentarea"><div class="cell markdown-cell"><p><a href="https://grack.com/blog/2011/10/26/automatic-file-transfer-in-iterm2-via-zmodem/">https://grack.com/blog/2011/10/26/automatic-file-transfer-in-iterm2-via-zmodem/</a><br><a href="http://openexz.sinaapp.com/2012/08/29/在iterm2中使用zmodem的方法/">http://openexz.sinaapp.com/2012/08/29/在iterm2中使用zmodem的方法/</a><br><a href="http://blog.sina.com.cn/s/blog_6e07f1eb0102uwre.html">http://blog.sina.com.cn/s/blog_6e07f1eb0102uwre.html</a></p>
 </div></div>
   <script>document.body.onkeyup = function(e) {
-if (e.keyCode === 39) window.location.href = 'dd status.html';
-if (e.keyCode === 37) window.location.href = 'build python 2.7.11.html';
+if (e.keyCode === 37) window.location.href = 'vim reference.html';
 }</script>
 </body>
 </html>
