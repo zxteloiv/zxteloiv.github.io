@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "二月工作小结"
-date:   2016-02-29 20:35
+date:   2016-02-28 20:35
 tags: learning corenlp java python debug 
 categories: chn learning
 math_support: 
