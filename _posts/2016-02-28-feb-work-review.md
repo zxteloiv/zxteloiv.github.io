@@ -71,4 +71,21 @@ cd classes ; jar -cf ../stanford-corenlp-latest.jar edu ; cd ..
 
 当然啦，一方面是因为 pdb 中敲变量名也挺累的，另一方面还是加载实体库和 wikipedia 词条跳转数据都比较大于是 pdb 中特别费时，如果使用 redis 服务化不但省了空间，还省了 debug 这样重复执行的时间。
 
+### 其他
+
+想起来还有一点别的，比如写了个 dijkstra，没什么好说的。
+
+另外就是一点重构经验，当默认的生成器比如 `itertools.permutations()` 不够用时，可以再包一个生成器，把需要保存状态或者各种条件判断[抽出来](https://github.com/zxteloiv/wikipedia-scripts/blob/master/main.py#L81)，保证了主函数调用的简洁.
+
+~~~ python
+def mention_pairs(mentions):
+    processed = set()
+    for ((m1, t1), (m2, t2)) in permutations(mentions, 2):
+        if m1 == m2 or (m1, m2) in processed or (m2, m1) in processed:
+            continue
+
+        processed.add((m1, m2))
+        yield ((m1, t1), (m2, t2))
+~~~
+
 
