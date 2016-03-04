@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Attention Mechanism Quick Notes"
-date:   2016-03-03 15:00
+date:   2016-03-04 17:00:00 +0800
 tags: machine_learning attention deep_learning end-to-end
 categories: main learning
 math_support: mathjax
