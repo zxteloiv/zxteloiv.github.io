@@ -9,6 +9,8 @@ math_support: mathjax
 
 [Reference_Source_(open_course)](Reference_Source_(open_course))
 
+[Ch3_Probabilistic_Density_Function_Estimation](Ch3_Probabilistic_Density_Function_Estimation)
+
 [Ch1_Introduction_to_Pattern_Recognition](Ch1_Introduction_to_Pattern_Recognition)
 
 

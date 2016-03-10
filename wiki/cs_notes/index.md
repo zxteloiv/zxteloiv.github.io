@@ -7,6 +7,8 @@ math_support: mathjax
 
 [BeautifulSoup4](BeautifulSoup4)
 
+[python_dict_over_redis](python_dict_over_redis)
+
 [python_argparse_module](python_argparse_module)
 
 [OCR_tutorial](OCR_tutorial)
