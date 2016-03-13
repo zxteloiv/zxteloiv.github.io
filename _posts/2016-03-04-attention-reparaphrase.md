@@ -7,7 +7,7 @@ categories: main learning
 math_support: mathjax
 ---
 
-Notes an attention-based methods.
+Notes on attention-based methods.
 
 ## Intro
 
