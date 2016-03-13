@@ -18,5 +18,17 @@ layout: default
     {% include katex_render.html %}
 {% endif %}
 
+{% if page.copyright == null or page.copyright == 'cc.by' %}
+ <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+     <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
+ </a>
+ <br />
+ {% if page.categories contains "chn" %}
+     本文使用<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">署名</a>协议进行授权.
+ {% else %}
+     This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+ {% endif %}
+{% endif %}
+
 {% include disqus.html %}
 
