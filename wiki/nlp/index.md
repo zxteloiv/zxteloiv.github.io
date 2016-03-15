@@ -13,7 +13,7 @@ math_support: mathjax
 
 [Generative_Adversarial_Networks（GAN）的现有工作](Generative_Adversarial_Networks（GAN）的现有工作)
 
-[multi-modal_concept](multi-modal_concept)
+[multi_modal_concept](multi_modal_concept)
 
 [tensor_method](tensor_method)
 
@@ -21,7 +21,7 @@ math_support: mathjax
 
 [快来还债，春节期间那些重要的论文](快来还债，春节期间那些重要的论文)
 
-[entity-linking](entity-linking)
+[entity_linking](entity_linking)
 
 [ClueWeb09_Dataset](ClueWeb09_Dataset)
 
