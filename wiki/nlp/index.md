@@ -33,8 +33,6 @@ math_support: mathjax
 
 [Lecture_Discovering_Keywords_for_Search,_Covariate_Shift,_and_Lifelong_Learning](Lecture_Discovering_Keywords_for_Search,_Covariate_Shift,_and_Lifelong_Learning)
 
-[Port_Exhausted_When_Accessing_Local_Server](Port_Exhausted_When_Accessing_Local_Server)
-
 [dependency_parsing_annotating_tags](dependency_parsing_annotating_tags)
 
 [attention_based_model](attention_based_model)
