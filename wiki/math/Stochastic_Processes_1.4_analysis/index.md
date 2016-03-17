@@ -6,7 +6,9 @@ math_support: mathjax
 
 
 ## 1-4 随机分析
+
 ### 1.收敛(极限)
+
 Idea: $E[(X_n-X)^2]\to 0$ 优于传统的 $P\{\vert X_n-X\vert\leqslant\varepsilon\rightarrow1\}$，后者需使用切比雪夫不等式，不太方便，前者可以用测量实验数据的方法得到。
 
 均方收敛：给定随机过程$\{X_n,n\in\mathbb N\}$和随机变量X，若$$\lim_{n\to\infty}E[(X_n-X)^2]=0$$，称$X_n$均方收敛于X，计作$\mathsf{l.i.m}X_n=X$
