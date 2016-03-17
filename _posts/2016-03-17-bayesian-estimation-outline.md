@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "贝叶斯估计概要复述"
-date:   2016-03-17 20:00 +0800
+date:   2016-03-17 21:30 +0800
 tags: learning bayesian_estimation bayesian
 categories: chn learning
 math_support: mathjax
@@ -91,7 +91,7 @@ p(\mu \vert D)
 &= \frac{P(D \vert \mu) p(\mu)}{P(D)} \\
 &= \frac{P(D \vert \mu) p(\mu)}{\int P(D \vert \mu) p(\mu) d\mu} \\
 &= \alpha P(D \vert \mu) p(\mu) \\
-&= \alpha \prod P(x_k \vert \mu) p(mu)
+&= \alpha \prod P(x_k \vert \mu) p(\mu)
 \end{align}
 $$
 
