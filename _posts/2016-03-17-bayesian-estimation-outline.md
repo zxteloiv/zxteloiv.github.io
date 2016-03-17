@@ -99,7 +99,7 @@ $$
 
 $$
 p(x_k \vert \mu) \sim \mathcal N(\mu, \sigma^2) = \frac{1}{\sqrt{2\pi}\sigma} \exp(-{(x_k - \mu)^2} / {2\sigma^2}) \\
-p(\mu) \sim \mathcal N(\mu_0, \sigma^2_0) = \frac{1}{\sqrt{2\pi}\sigma} \exp(-{(x_k - \mu)^2} / {2\sigma^2})
+p(\mu) \sim \mathcal N(\mu_0, \sigma^2_0) = \frac{1}{\sqrt{2\pi}\sigma} \exp(-{(x_k - \mu_0)^2} / {2\sigma_0^2})
 $$.
 
 代入前面可以推得
