@@ -64,7 +64,7 @@ $$
 
 顺便一提 MAP 估计则是 $$\hat \theta_i = \arg \max_{\theta_i} l(\theta)p(\theta)$$.
 
-若模型错误，例如被估计的模型为 $$\mathcal N(\mu, 1)$$ 而实际为 $$\mathcal N(\mu, 10)$$，MLE 估计的最优未必会依然用错误模型的非“最优”参数工作得最好.
+若模型错误，例如被估计的模型为 $$\mathcal N(\mu, 1)$$ 而实际为 $$\mathcal N(\mu, 10)$$，MLE 估计的最优未必会比依然用错误模型的非“最优”参数工作得好.
 
 ### 3. 贝叶斯估计 Bayesian Estimation
 
