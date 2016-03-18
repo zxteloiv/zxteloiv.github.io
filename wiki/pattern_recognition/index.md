@@ -11,6 +11,8 @@ math_support: mathjax
 
 [Ch3_Probabilistic_Density_Function_Estimation](Ch3_Probabilistic_Density_Function_Estimation)
 
+[Ch4_non_parametric_estimation](Ch4_non_parametric_estimation)
+
 [Ch1_Introduction_to_Pattern_Recognition](Ch1_Introduction_to_Pattern_Recognition)
 
 

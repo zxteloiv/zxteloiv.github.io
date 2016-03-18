@@ -52,13 +52,36 @@ MLE gives a value for a parameter, but BE gives a distribution.
 
 ## EM
 
-complement in next lecture
+lack of data or hidden variables
+
+method: $\theta^i \to \theta$
+
+E-step:
+
+$$
+Q(\theta; \theta^i)=E_{D_b}[\ln p(D_g,D_b;\theta)\vert D_g;\theta^i]
+$$
+
+M-step:
+maximized the expectation Q
 
 
+**example 1**: missing data
 
+**example 2**: multi-gaussian
 
+$$
+p(x)=\sum_k \pi_k p(x \vert \theta_k),\text{ where } p(x \vert \theta_k) \sim \mathcal{N}()
+$$
 
+define Q-function
 
+$$
+\begin{align}
+Q(\Theta, \Theta^{old}) &= E_Z[\log p(X, Z \vert \Theta)]  \\
+&= \sum_n\sum_k \gamma(z_{nk})\{\log \pi_k + \log \mathcal N(x \vert \mu_k, \Sigma_k))\}
+\end{align}
+$$
 
 
 
