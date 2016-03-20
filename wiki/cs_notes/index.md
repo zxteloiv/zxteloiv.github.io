@@ -37,6 +37,8 @@ math_support: mathjax
 
 [python_profiling_tools](python_profiling_tools)
 
+[docker](docker)
+
 [latex_memo](latex_memo)
 
 
