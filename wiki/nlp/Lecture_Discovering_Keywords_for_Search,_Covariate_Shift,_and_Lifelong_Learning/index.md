@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Lecture_Discovering_Keywords_for_Search,_Covariate_Shift,_and_Lifelong_Learning
+title: Lecture Discovering Keywords for Search, Covariate Shift, and Lifelong Learning
 math_support: mathjax
 ---
 

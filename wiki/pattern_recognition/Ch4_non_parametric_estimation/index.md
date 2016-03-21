@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Ch4_non_parametric_estimation
+title: Ch4 non parametric estimation
 math_support: mathjax
 ---
 

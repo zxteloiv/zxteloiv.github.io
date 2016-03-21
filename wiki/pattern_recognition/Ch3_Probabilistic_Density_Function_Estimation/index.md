@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Ch3_Probabilistic_Density_Function_Estimation
+title: Ch3 Probabilistic Density Function Estimation
 math_support: mathjax
 ---
 

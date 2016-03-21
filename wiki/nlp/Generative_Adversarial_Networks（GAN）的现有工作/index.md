@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Generative_Adversarial_Networks（GAN）的现有工作
+title: Generative Adversarial Networks（GAN）的现有工作
 math_support: mathjax
 ---
 

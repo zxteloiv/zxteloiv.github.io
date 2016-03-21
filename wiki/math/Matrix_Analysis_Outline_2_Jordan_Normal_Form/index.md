@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Matrix_Analysis_Outline_2_Jordan_Normal_Form
+title: Matrix Analysis Outline 2 Jordan Normal Form
 math_support: mathjax
 ---
 

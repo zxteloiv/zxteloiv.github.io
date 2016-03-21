@@ -1,6 +1,6 @@
 ---
 layout: page
-title: attention_based_model
+title: attention based model
 math_support: mathjax
 ---
 

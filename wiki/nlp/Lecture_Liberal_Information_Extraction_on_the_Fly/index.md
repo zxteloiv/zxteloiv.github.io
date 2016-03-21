@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Lecture_Liberal_Information_Extraction_on_the_Fly
+title: Lecture Liberal Information Extraction on the Fly
 math_support: mathjax
 ---
 

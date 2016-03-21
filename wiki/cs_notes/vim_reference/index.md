@@ -1,6 +1,6 @@
 ---
 layout: page
-title: vim_reference
+title: vim reference
 math_support: mathjax
 ---
 

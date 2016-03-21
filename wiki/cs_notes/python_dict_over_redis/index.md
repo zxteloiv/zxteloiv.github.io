@@ -1,6 +1,6 @@
 ---
 layout: page
-title: python_dict_over_redis
+title: python dict over redis
 math_support: mathjax
 ---
 

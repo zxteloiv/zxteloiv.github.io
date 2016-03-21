@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Stochastic_Processes_Outline_4_Markov
+title: Stochastic Processes Outline 4 Markov
 math_support: mathjax
 ---
 

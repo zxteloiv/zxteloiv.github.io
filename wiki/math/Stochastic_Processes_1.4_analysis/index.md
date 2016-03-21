@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Stochastic_Processes_1.4_analysis
+title: Stochastic Processes 1.4 analysis
 math_support: mathjax
 ---
 

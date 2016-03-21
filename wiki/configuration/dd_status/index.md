@@ -1,6 +1,6 @@
 ---
 layout: page
-title: dd_status
+title: dd status
 math_support: mathjax
 ---
 

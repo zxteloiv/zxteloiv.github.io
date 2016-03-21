@@ -1,6 +1,6 @@
 ---
 layout: page
-title: multi_modal_concept
+title: multi modal concept
 math_support: mathjax
 ---
 

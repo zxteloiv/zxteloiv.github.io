@@ -1,6 +1,6 @@
 ---
 layout: page
-title: ubuntu_14.04_vps
+title: ubuntu 14.04 vps
 math_support: mathjax
 ---
 

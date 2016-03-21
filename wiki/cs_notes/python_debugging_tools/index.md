@@ -1,6 +1,6 @@
 ---
 layout: page
-title: python_debugging_tools
+title: python debugging tools
 math_support: mathjax
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Matrix_Analysis_Outline_5_Calculus
+title: Matrix Analysis Outline 5 Calculus
 math_support: mathjax
 ---
 

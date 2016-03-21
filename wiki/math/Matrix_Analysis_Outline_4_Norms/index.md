@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Matrix_Analysis_Outline_4_Norms
+title: Matrix Analysis Outline 4 Norms
 math_support: mathjax
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Ch1_Introduction_to_Pattern_Recognition
+title: Ch1 Introduction to Pattern Recognition
 math_support: mathjax
 ---
 

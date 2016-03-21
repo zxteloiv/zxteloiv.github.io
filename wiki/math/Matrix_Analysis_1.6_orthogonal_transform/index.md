@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Matrix_Analysis_1.6_orthogonal_transform
+title: Matrix Analysis 1.6 orthogonal transform
 math_support: mathjax
 ---
 

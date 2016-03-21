@@ -1,6 +1,6 @@
 ---
 layout: page
-title: tensor_method
+title: tensor method
 math_support: mathjax
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: character_model
+title: character model
 math_support: mathjax
 ---
 

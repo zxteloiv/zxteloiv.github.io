@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Sentimental_analysis
+title: Sentimental analysis
 math_support: mathjax
 ---
 

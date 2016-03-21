@@ -1,6 +1,6 @@
 ---
 layout: page
-title: OCR_tutorial
+title: OCR tutorial
 math_support: mathjax
 ---
 

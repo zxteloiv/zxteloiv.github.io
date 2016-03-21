@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Git_commands
+title: Git commands
 math_support: mathjax
 ---
 

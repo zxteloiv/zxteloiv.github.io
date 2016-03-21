@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Matrix_Analysis_1.4_linear_transform
+title: Matrix Analysis 1.4 linear transform
 math_support: mathjax
 ---
 

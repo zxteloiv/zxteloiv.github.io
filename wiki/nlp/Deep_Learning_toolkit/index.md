@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Deep_Learning_toolkit
+title: Deep Learning toolkit
 math_support: mathjax
 ---
 

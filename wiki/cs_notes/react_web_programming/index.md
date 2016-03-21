@@ -1,6 +1,6 @@
 ---
 layout: page
-title: react_web_programming
+title: react web programming
 math_support: mathjax
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Stochastic_Processes_1.3_statistical_characteristics
+title: Stochastic Processes 1.3 statistical characteristics
 math_support: mathjax
 ---
 

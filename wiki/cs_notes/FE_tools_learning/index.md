@@ -1,6 +1,6 @@
 ---
 layout: page
-title: FE_tools_learning
+title: FE tools learning
 math_support: mathjax
 ---
 

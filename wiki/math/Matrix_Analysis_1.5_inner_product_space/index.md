@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Matrix_Analysis_1.5_inner_product_space
+title: Matrix Analysis 1.5 inner product space
 math_support: mathjax
 ---
 

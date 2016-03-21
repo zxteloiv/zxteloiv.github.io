@@ -1,6 +1,6 @@
 ---
 layout: page
-title: latex_memo
+title: latex memo
 math_support: mathjax
 ---
 

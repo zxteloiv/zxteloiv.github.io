@@ -1,6 +1,6 @@
 ---
 layout: page
-title: entity_linking
+title: entity linking
 math_support: mathjax
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: nginx_multi_server
+title: nginx multi server
 math_support: mathjax
 ---
 

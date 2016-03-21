@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Matrix_Analysis_1.3_linear_operator
+title: Matrix Analysis 1.3 linear operator
 math_support: mathjax
 ---
 

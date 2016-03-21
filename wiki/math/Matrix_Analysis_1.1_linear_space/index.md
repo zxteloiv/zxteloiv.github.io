@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Matrix_Analysis_1.1_linear_space
+title: Matrix Analysis 1.1 linear space
 math_support: mathjax
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: zmodem_on_mac
+title: zmodem on mac
 math_support: mathjax
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Stochastic_Processes_1.2 distribution
+title: Stochastic Processes 1.2 distribution
 math_support: mathjax
 ---
 

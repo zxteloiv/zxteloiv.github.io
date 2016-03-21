@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Stochastic_Processes_1.1_Concepts
+title: Stochastic Processes 1.1 Concepts
 math_support: mathjax
 ---
 

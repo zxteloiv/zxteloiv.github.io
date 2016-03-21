@@ -1,6 +1,6 @@
 ---
 layout: page
-title: optimization._ncg
+title: optimization. ncg
 math_support: mathjax
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: ClueWeb09_Dataset
+title: ClueWeb09 Dataset
 math_support: mathjax
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: create_bootable_ubuntu_on_osx
+title: create bootable ubuntu on osx
 math_support: mathjax
 ---
 

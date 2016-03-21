@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Penn_Treebank_II_Constituent_Tags
+title: Penn Treebank II Constituent Tags
 math_support: mathjax
 ---
 

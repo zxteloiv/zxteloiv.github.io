@@ -1,6 +1,6 @@
 ---
 layout: page
-title: NLP_Toolkit
+title: NLP Toolkit
 math_support: mathjax
 ---
 

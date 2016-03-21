@@ -1,6 +1,6 @@
 ---
 layout: page
-title: vimrc_on_remote_server
+title: vimrc on remote server
 math_support: mathjax
 ---
 

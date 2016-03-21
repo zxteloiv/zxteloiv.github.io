@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Stochastic_Processes_Outline_1_Concepts
+title: Stochastic Processes Outline 1 Concepts
 math_support: mathjax
 ---
 

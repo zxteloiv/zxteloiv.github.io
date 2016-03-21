@@ -1,6 +1,6 @@
 ---
 layout: page
-title: TeX_learning
+title: TeX learning
 math_support: mathjax
 ---
 

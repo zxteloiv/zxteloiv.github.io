@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Matrix_Analysis_Outline_1_Geometry
+title: Matrix Analysis Outline 1 Geometry
 math_support: mathjax
 ---
 

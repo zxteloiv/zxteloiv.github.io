@@ -1,6 +1,6 @@
 ---
 layout: page
-title: dependency_parsing_annotating_tags
+title: dependency parsing annotating tags
 math_support: mathjax
 ---
 

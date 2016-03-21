@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Matrix_Analysis_1.2_basis,_dimension,_coordinates
+title: Matrix Analysis 1.2 basis, dimension, coordinates
 math_support: mathjax
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: CNN_for_NLP
+title: CNN for NLP
 math_support: mathjax
 ---
 

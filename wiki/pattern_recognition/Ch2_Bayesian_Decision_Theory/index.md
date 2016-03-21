@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Ch2_Bayesian_Decision_Theory
+title: Ch2 Bayesian Decision Theory
 math_support: mathjax
 ---
 

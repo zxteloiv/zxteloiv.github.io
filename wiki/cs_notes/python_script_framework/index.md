@@ -1,6 +1,6 @@
 ---
 layout: page
-title: python_script_framework
+title: python script framework
 math_support: mathjax
 ---
 

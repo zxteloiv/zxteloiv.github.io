@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Reference_Source_(open_course)
+title: Reference Source (open course)
 math_support: mathjax
 ---
 

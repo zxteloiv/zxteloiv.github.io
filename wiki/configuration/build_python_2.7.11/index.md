@@ -1,6 +1,6 @@
 ---
 layout: page
-title: build_python_2.7.11
+title: build python 2.7.11
 math_support: mathjax
 ---
 

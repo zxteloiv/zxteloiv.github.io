@@ -1,6 +1,6 @@
 ---
 layout: page
-title: python_save_memory
+title: python save memory
 math_support: mathjax
 ---
 

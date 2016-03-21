@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Treebank_Annotator_Tags
+title: Treebank Annotator Tags
 math_support: mathjax
 ---
 

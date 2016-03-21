@@ -1,6 +1,6 @@
 ---
 layout: page
-title: python_profiling_tools
+title: python profiling tools
 math_support: mathjax
 ---
 

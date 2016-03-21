@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Matrix_Analysis_Outline_6_Generalized_Inverse
+title: Matrix Analysis Outline 6 Generalized Inverse
 math_support: mathjax
 ---
 

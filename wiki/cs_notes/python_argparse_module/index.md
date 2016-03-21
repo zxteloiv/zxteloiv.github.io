@@ -1,6 +1,6 @@
 ---
 layout: page
-title: python_argparse_module
+title: python argparse module
 math_support: mathjax
 ---
 

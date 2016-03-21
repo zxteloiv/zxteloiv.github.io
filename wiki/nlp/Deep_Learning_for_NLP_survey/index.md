@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Deep_Learning_for_NLP_survey
+title: Deep Learning for NLP survey
 math_support: mathjax
 ---
 

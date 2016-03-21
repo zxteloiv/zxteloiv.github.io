@@ -1,6 +1,6 @@
 ---
 layout: page
-title: HDF5_storage_format
+title: HDF5 storage format
 math_support: mathjax
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Stochastic_Processes_Outline_2 Stationary_Processes
+title: Stochastic Processes Outline 2 Stationary Processes
 math_support: mathjax
 ---
 
