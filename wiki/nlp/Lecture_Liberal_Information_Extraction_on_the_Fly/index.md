@@ -31,6 +31,10 @@ lv2: hurt (in mental)
 
 Abstract Meaning Representation (Banarescu et al., 2013)
 
+<div><img src="resources/FB7423AD76A2CFD7DDFEA6EE21ADE0A1.jpg" alt="IMG_9101.JPG"></div>
+
+
+
 lv3: knowledge base embedding
 cheer(Candidate, Democratic Party)
 
@@ -57,40 +61,19 @@ semantic meaningful pattern for text but maybe not that in images
 
 associative rule (like in data mining)
 
+
+<div><img src="resources/3196CFF8B5C011D73B3A655B82249AB3.jpg" alt="IMG_9102.JPG"></div>
+
+
+
 ### to a new language
 
 pattern recurring multiple times
 
-> human can learn Tibetan through pattern matching
+> human can learn Tibetan through pattern matching  
 > maybe another learning way
 
 Expectation-driven learning
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
