@@ -37,6 +37,8 @@ math_support: mathjax
 
 [attention_based_model](attention_based_model)
 
+[Lecture_Liberal_Information_Extraction_on_the_Fly](Lecture_Liberal_Information_Extraction_on_the_Fly)
+
 [Sentimental_analysis](Sentimental_analysis)
 
 [CNN_for_NLP](CNN_for_NLP)
