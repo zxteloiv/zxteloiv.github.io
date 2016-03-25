@@ -7,6 +7,8 @@ math_support: mathjax
 
 [Ch2_Bayesian_Decision_Theory](Ch2_Bayesian_Decision_Theory)
 
+[Ch5_linear_discriminant_functions](Ch5_linear_discriminant_functions)
+
 [Reference_Source_(open_course)](Reference_Source_(open_course))
 
 [Ch3_Probabilistic_Density_Function_Estimation](Ch3_Probabilistic_Density_Function_Estimation)
