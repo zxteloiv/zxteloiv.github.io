@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "从参数估计到线性判别函数"
-date:   2016-03-17 21:30 +0800
+date:   2016-03-27 12:30 +0800
 tags: learning bayesian_estimation bayesian discriminant_function maximum_likelihood_estimation
 categories: chn learning
 math_support: mathjax
