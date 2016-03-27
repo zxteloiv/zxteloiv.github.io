@@ -7,7 +7,8 @@ categories: chn learning
 math_support: mathjax
 ---
 
-从 Duda 的书《Pattern Classification》整理而来的一个轮廓，希望能对理解贝叶斯估计有所帮助。
+从 Duda 的书《Pattern Classification》整理而来的一个轮廓，希望能对理解贝叶斯估计有所帮助。  
+新的更宏观的来龙去脉可以看新的一篇:[从参数估计到线性判别函数](http://libzx.so/chn/learning/2016/03/27/from-estimator-to-linear-discriminant.html)
 
 ### 1. 贝叶斯决策
 
