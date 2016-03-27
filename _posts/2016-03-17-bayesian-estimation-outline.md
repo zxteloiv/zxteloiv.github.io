@@ -78,8 +78,8 @@ $$
 $$
 \begin{align}
 p(x \vert D) 
-&= \int p(x, \mu \vert D) du \\
-&= \int p(x \vert \mu) p(\mu \vert D) du
+&= \int p(x, \mu \vert D) d\mu \\
+&= \int p(x \vert \mu) p(\mu \vert D) d\mu
 \end{align}
 $$
 

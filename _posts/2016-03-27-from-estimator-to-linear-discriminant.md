@@ -56,8 +56,8 @@ $$
 $$
 \begin{align}
 p(x \vert c_i) &= p(x \vert D[, c_i]) \\
-       &= \int p(x, \theta \vert D) du \\
-       &= \int p(x \vert \theta) p(\theta \vert D) du \\
+       &= \int p(x, \theta \vert D) d\theta \\
+       &= \int p(x \vert \theta) p(\theta \vert D) d\theta \\
 \text{where } p(\theta \vert D)
 &= \frac{P(D \vert \theta) p(\theta)}{P(D)} \\
 &= \frac{P(D \vert \theta) p(\theta)}{\int P(D \vert \theta) p(\theta) d\theta} \\
