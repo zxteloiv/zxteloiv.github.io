@@ -17,4 +17,6 @@ math_support: mathjax
 
 [Ch1_Introduction_to_Pattern_Recognition](Ch1_Introduction_to_Pattern_Recognition)
 
+[Homework_1](Homework_1)
+
 
