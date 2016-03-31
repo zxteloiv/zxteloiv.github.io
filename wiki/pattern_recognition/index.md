@@ -7,6 +7,8 @@ math_support: mathjax
 
 [Ch2_Bayesian_Decision_Theory](Ch2_Bayesian_Decision_Theory)
 
+[Ch6_artificial_neural_network](Ch6_artificial_neural_network)
+
 [Ch5_linear_discriminant_functions](Ch5_linear_discriminant_functions)
 
 [Reference_Source_(open_course)](Reference_Source_(open_course))
