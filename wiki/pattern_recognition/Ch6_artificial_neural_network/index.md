@@ -5,6 +5,16 @@ math_support: mathjax
 ---
 
 
+## history
 
+blabla
+
+## model
+
+blabla
+
+## perceptron learning
+
+blabla
 
 
