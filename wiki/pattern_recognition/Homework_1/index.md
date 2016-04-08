@@ -9,7 +9,7 @@ math_support: mathjax
 
 证明：在两类情况下 $P(\omega_1 \vert x) + P(\omega_2 \vert x)=1$.
 
-**证明**：由于 P(\omega \vert x) 的意义为概率，则应积分为1 即 $\int P(\omega\vert x)d\omega = 1$，只有两类时即有$P(\omega_1 \vert x) + P(\omega_2 \vert x)=1$
+**证明**：由于 $P(\omega \vert x)$ 的意义为概率，则应积分为1 即 $\int P(\omega\vert x)d\omega = 1$，只有两类时即有$P(\omega_1 \vert x) + P(\omega_2 \vert x)=1$
 
 ### 2.4
 
