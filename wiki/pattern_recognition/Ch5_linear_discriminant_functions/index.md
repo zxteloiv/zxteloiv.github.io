@@ -37,7 +37,7 @@ blabla
 
 ### multi-class classifier
 
-- one-vs-all
+- one-vs-all: one class and all other classes
 - one-vs-one, for all one-one pair
 - one-vs-others, in pace, 1coc(???)
 
