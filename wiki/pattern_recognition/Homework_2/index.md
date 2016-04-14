@@ -91,7 +91,7 @@ $$
 
 **解**: 分类面如图所示：
 
-![FullSizeRender.jpg](quiver-image-url/E2AB90225E6E93B64B7F5F668A8A0BC5.jpg)
+![FullSizeRender.jpg](resources/E2AB90225E6E93B64B7F5F668A8A0BC5.jpg)
 
 由于每个类的判别函数在特定点上总有一个最大者，故整个平面中不存在有歧义或未分类的点，不存在分类不确定区域。
 
@@ -108,7 +108,7 @@ Write a program to implement the “batch perception” algorithm (see page 44 o
 (b) 收敛需要 17 步迭代，所得权重 [41.40000000000002,-48.60000000000002,-19.0]  
 (c) 由下图可以发现，w1 (蓝色) 和 w2 (橙色) 的点相离较近，而 w2 (橙色) 与 w3 (绿色) 距离较远，仅有个别点较近。
 
-![plot_w1-w3.png](quiver-image-url/7332A7D621E125A703EE5EA730773FEA.png)
+![plot_w1-w3.png](resources/7332A7D621E125A703EE5EA730773FEA.png)
 
 因此，同样的算法寻找 w2 和 w3 的边界会比寻找 w1 与 w2 的边界收敛更快。
 

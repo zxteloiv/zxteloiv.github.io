@@ -77,4 +77,32 @@ hopfield: a node give output to all other nodes except itself
 
 the relation between hopfield & pagerank & $$\pi$$?
 
+## deep learning
+
+history .... blablabla ....
+network structure .... blablabla ....
+
+- loss func may be local optimum
+- train each layer by layer (unsupervised, greedy) (auto-encoder pre-train)
+- go deeper (without auto-encoder pre-train, no deep learning or training??)
+
+## basic models
+
+
+
+## extension
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

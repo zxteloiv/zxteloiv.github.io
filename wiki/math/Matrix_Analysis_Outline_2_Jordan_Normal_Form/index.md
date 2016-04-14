@@ -6,7 +6,7 @@ math_support: mathjax
 
 
 ### Bird's-eye view
-![QQ20160103-0.png](quiver-image-url/1264860B632D85164D519EC9911AD0C8.png)
+![QQ20160103-0.png](resources/1264860B632D85164D519EC9911AD0C8.png)
 
 ### 1. 推广得到 lambda matrix
 
