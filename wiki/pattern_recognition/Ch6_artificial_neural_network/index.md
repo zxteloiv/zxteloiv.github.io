@@ -86,11 +86,27 @@ network structure .... blablabla ....
 - train each layer by layer (unsupervised, greedy) (auto-encoder pre-train)
 - go deeper (without auto-encoder pre-train, no deep learning or training??)
 
-## basic models
+## CNN
 
+- shared weights
+- local connectivity
 
+one layer weights saved:
 
-## extension
+| methods                 | weights amount |
+| ----------------------- | -------------- |
+| raw                     | $200 * 200 * n_h$ |
+| shared weights only     | 0 |
+| local connectivity only | 0 |
+| both                    | 0 |
+
+matrix 
+
+## auto-encoder
+
+x -> encoder -> decoder -> z,  $\min \sum_k \parallel x_k - z_k \parallel^2$
+
+may iterate more and more times: z -> x -> z -> x -> z -> ...
 
 
 
