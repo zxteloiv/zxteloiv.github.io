@@ -40,6 +40,8 @@ math_support: mathjax
 
 [entity_linking](entity_linking)
 
+[meeting_Cross_Lingual_Multi_domain_QA](meeting_Cross_Lingual_Multi_domain_QA)
+
 [multi_modal_concept](multi_modal_concept)
 
 [optimization._ncg](optimization._ncg)

@@ -16,9 +16,13 @@ math_support: mathjax
 
 [Ch6_artificial_neural_network](Ch6_artificial_neural_network)
 
+[Ch7_model_selection](Ch7_model_selection)
+
 [Homework_1](Homework_1)
 
 [Homework_2](Homework_2)
+
+[Homework_3](Homework_3)
 
 [Reference_Source_(open_course)](Reference_Source_(open_course))
 
