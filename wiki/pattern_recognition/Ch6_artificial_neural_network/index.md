@@ -93,14 +93,16 @@ network structure .... blablabla ....
 
 one layer weights saved:
 
+suppose the image is 200\*200, and next hidden layer has 196 \* 196 nodes
+
 | methods                 | weights amount |
 | ----------------------- | -------------- |
-| raw                     | $200 * 200 * n_h$ |
-| shared weights only     | 0 |
-| local connectivity only | 0 |
-| both                    | 0 |
+| raw                     | (200 \* 200) \* (196 \* 196) |
+| shared weights only     | (200 \* 200) \* (1) |
+| local connectivity only | (5 \* 5) \* (196 \* 196) |
+| both                    | (5 \* 5) \* (1) |
 
-matrix 
+then the hidden layer has 196 \* 196 outputs, use pooling
 
 ## auto-encoder
 
