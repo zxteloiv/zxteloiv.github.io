@@ -20,6 +20,8 @@ math_support: mathjax
 
 [latex_memo](latex_memo)
 
+[mathematica_plot](mathematica_plot)
+
 [protocol_exchange_lib](protocol_exchange_lib)
 
 [python_argparse_module](python_argparse_module)
