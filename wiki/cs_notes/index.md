@@ -18,11 +18,15 @@ math_support: mathjax
 
 [ggplot](ggplot)
 
+[julia_resources](julia_resources)
+
 [latex_memo](latex_memo)
 
 [mathematica_plot](mathematica_plot)
 
 [protocol_exchange_lib](protocol_exchange_lib)
+
+[pyenv_notes](pyenv_notes)
 
 [python_argparse_module](python_argparse_module)
 

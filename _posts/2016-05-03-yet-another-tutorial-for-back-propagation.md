@@ -57,6 +57,8 @@ $$
 
 ## 2. How To: Back Propagation
 
+### notations
+
 Suppose we are building a feedforward neural network that is very very deep (up to 100 layers), each layer consists several independent neurons eating the output from the previous layer.
 
 Let neurons in two adjacent layers be fully connected (like a bipartite graph).
@@ -72,6 +74,10 @@ Since every output and weight is a single number, we can use matrix to rewrite t
 $$
 O^{(k+1)} = \sigma(W O^{(k)}), k = 1, 2, \dots, N - 1
 $$
+
+### computation
+
+Let's take only one example to train, then the loss function is just $$ J(W) = \parallel o - y \parallel^2 $$
 
 Every $$O^{(k)}$$ is a single
 
