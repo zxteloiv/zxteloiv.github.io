@@ -18,6 +18,8 @@ math_support: mathjax
 
 [Ch7_model_selection](Ch7_model_selection)
 
+[Ch8_data_clustering](Ch8_data_clustering)
+
 [Homework_1](Homework_1)
 
 [Homework_2](Homework_2)

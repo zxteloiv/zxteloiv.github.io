@@ -64,14 +64,14 @@ add to path search for local 2.7.11 packages (??)
 
 use barely virtualenv is ok
 
-while pyenv could help to activate or deactivate easily
+while pyenv could help to manage virtualenv in versions dir
 
 ~~~ bash
-pyenv virtualenv 2.7.11 ./myenv # create
-pyenv virtualenv ./env2 # create under the current dist.
+pyenv virtualenv 2.7.11 myenv # create
+pyenv virtualenv env2 # create under the current dist.
 pyenv activate env2
 pyenv deactivate
-pyenv uninstall ./myenv #remove
+pyenv uninstall myenv #remove
 ~~~
 
 
