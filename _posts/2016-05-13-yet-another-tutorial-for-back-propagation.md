@@ -98,7 +98,7 @@ So far, we've got the way to compute each gradient for every $$W$$ and also ever
 
 You may note that these $$O$$-s and $$W$$-s are all matrices, the derivative note is actually for matrices. If you try to compute each of them, some items could be ignored. For example, suppose $$w_ji$$ is the weight of from $$O^{(k)}_i$$ to $$O^{(k+1)}_j$$, when computing its gradient, all gradients of nodes in the $$(k+1)$$-layer except the $$j$$-th node are useless. They are not functions of $$w_ji$$ and thus their derivatives w.r.t. $$w_ji$$ are all ZERO.
 
-Using words rather than formula, we know $$J$$ is function w.r.t $$O^{(k+1)}_j, j=1,2,\dots,d_{(k+1)}$$, and each $$O^{(k+1)}_j$$ is a function of all $$O^{(k)}_i, i = 1,2,\dots,d_{(k)}$$ and $$w_ji$$.
+Using words rather than formula, we know $$J$$ is function w.r.t $$O^{(k+1)}_j, j=1,2,\dots,d_{(k+1)}$$, and each $$O^{(k+1)}_j$$ is a function of all $$O^{(k)}_i, i = 1,2,\dots,d_{(k)}$$ and $$w_{ji}$$.
 
 Just follow the rule to compute partial derivatives of compound functions above, we could get everything.
 
