@@ -96,7 +96,7 @@ $$
 
 So far, we've got the way to compute each gradient for every $$W$$ and also every $$O^{(k)}$$. The first is what we really want, and the second helps us to compute backward iteratively, i.e., use $$O^{(k+1)}$$ to get gradient for $$O^{(k)}$$ and then $$O^{(k-1)}$$ and so on so forth.
 
-You may note that these $$O$$-s and $$W$$-s are all matrices, the derivative note is actually for matrices. If you try to compute each of them, some items could be ignored. For example, suppose $$w_ji$$ is the weight of from $$O^{(k)}_i$$ to $$O^{(k+1)}_j$$, when computing its gradient, all gradients of nodes in the $$(k+1)$$-layer except the $$j$$-th node are useless. They are not functions of $$w_ji$$ and thus their derivatives w.r.t. $$w_ji$$ are all ZERO.
+You may note that these $$O$$-s and $$W$$-s are all matrices, the derivative note is actually for matrices. If you try to compute each of them, some items could be ignored. For example, suppose $$w_{ji}$$ is the weight of from $$O^{(k)}_i$$ to $$O^{(k+1)}_j$$, when computing its gradient, all gradients of nodes in the $$(k+1)$$-layer except the $$j$$-th node are useless. They are not functions of $$w_{ji}$$ and thus their derivatives w.r.t. $$w_{ji}$$ are all ZERO.
 
 Using words rather than formula, we know $$J$$ is function w.r.t $$O^{(k+1)}_j, j=1,2,\dots,d_{(k+1)}$$, and each $$O^{(k+1)}_j$$ is a function of all $$O^{(k)}_i, i = 1,2,\dots,d_{(k)}$$ and $$w_{ji}$$.
 
