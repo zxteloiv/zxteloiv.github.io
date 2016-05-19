@@ -203,6 +203,36 @@ tranditional semantic parsing methods
 - weakly supervised semantic parsing
 - connect free texts and KB, using relational learning method (Bordes. 2012, Weston. 2010, 2013)
 
+### Ng and Kan - 2015 - QANUS An Open-source Question-Answering Platform
+
+**approaches**
+
+L. Hirschman and R. Gaizauskas. 2001. Natural Language Question Answering: The View From Here. Natural Lan- guage Engineering, 7, Issue 4:275–300, December.
+
+- IR-based, lexical and syntactic form, no semantics
+
+Jimmy Lin. 2007. An Exploration of the Principles Underlying Redundancy-Based Factoid Question Answering. ACM Transactions on Infor- mation Systems, 27(2):1–55.
+
+ARANEA
+
+- not general QA platform
+- factoid only
+
+QANDA
+
+- not publicly available
+
+**frameworks**
+
+Old:
+
+1. documents preprocessing
+2. question analysis
+3. candidate selection -> document analysis -> answer extraction
+4. generation
+
+
+
 ## framework
 
 ## semantic parsing
@@ -212,5 +242,10 @@ tranditional semantic parsing methods
 ## IR-based
 
 ## pattern
+
+
+
+
+
 
 
