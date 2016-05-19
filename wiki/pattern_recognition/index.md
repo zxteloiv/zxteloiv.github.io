@@ -20,6 +20,8 @@ math_support: mathjax
 
 [Ch8_data_clustering](Ch8_data_clustering)
 
+[Ch9_Support_Vector_Machine](Ch9_Support_Vector_Machine)
+
 [Homework_1](Homework_1)
 
 [Homework_2](Homework_2)

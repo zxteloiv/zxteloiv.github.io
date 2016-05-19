@@ -33,7 +33,7 @@ math_support: mathjax
 
 提问处理 -> 答案类型 -> 答案抽取 <- 检索
 
-抽取 -> 答案
+抽取 \-> 答案
 
 **NLP technique**
 
@@ -128,11 +128,11 @@ learn textual patterns from web
 
 **framework**
 
-QA example -> transform -> recognize <- question templates
+QA example \-> transform \-> recognize <\- question templates
 
-recognize -> learning <- search engine
+recognize \-> learning <\- search engine
 
-learning -> textual patterns -> answering <- recognize (with question)
+learning \-> textual patterns \-> answering <\- recognize (with question)
 
 ### Jurczyk and Choi - 2016 - Multi-Field Structural Decomposition for Question Answering
 
@@ -147,8 +147,8 @@ learning -> textual patterns -> answering <- recognize (with question)
   
 **framework**
 
-documents -> nlp tools -> field extractor -> index
-questions, docs -> nlp -> field extractor -> answer ranker <- query indexes
+documents \-> nlp tools \-> field extractor \-> index
+questions, docs \-> nlp \-> field extractor \-> answer ranker <\- query indexes
 
 ### Bordes et al. - 2014 - Question answering with subgraph embeddings
 
@@ -228,12 +228,22 @@ Old:
 
 1. documents preprocessing
 2. question analysis
-3. candidate selection -> document analysis -> answer extraction
+3. candidate selection \-> document analysis \-> answer extraction
 4. generation
 
+New:
 
+1. Information Preparing
+2. Question Processing
+3. Answer Retrieval
 
-## framework
+### Weston et al. - 2015 - Towards AI-Complete Question Answering A Set of Prerequisite Toy Tasks
+
+split the understanding problem into several small pieces
+
+### 基于深度学习的知识库问答研究进展.pdf
+
+## frameworks
 
 ## semantic parsing
 

@@ -90,6 +90,9 @@ H. Chen and X. Yao, "Multiobjective Nueral Network Ensemble...", 2010
 - online class imbalance learning
 - theoretical analysis is needed
 
+## QA
+
+已有类与其他都不同
 
 
 
