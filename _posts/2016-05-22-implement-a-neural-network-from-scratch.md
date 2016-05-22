@@ -21,13 +21,13 @@ Specifically, we have a *perceptron layer* and a *stack network* class, because 
 
 ## layers
 
-To take a layer as a independent unit, we may have to keep the inputs and outputs for each layer, even though they can be merged since the previous layers' outputs will be the inputs of the next layer. This can be useful if computations of partial derivative needs the inputs and outputs.
+To take a layer as an independent unit, we may have to keep the inputs and outputs for each layer, even though they can be merged since the previous layers' outputs will be the inputs of the next layer. This can be useful if computations of partial derivative needs the inputs and outputs.
 
 If we are implementing a batch update, we need to save temporarily the updates for all weights before we actually update any of them.
 
 ## network
 
-A stack net is a composition of layers, thus the *forward*, *backward* and *batch_update* are just looping and calling appropriate functions of each layer, except that before *backwork* the network should compute the error of loss function w.r.t the outputs of the last layer, which is the duty of the network and layers are not aware of it.
+A stack net is a composition of layers, thus the *forward*, *backward* and *batch_update* are just looping and calling appropriate functions of each layer, except that before *backward* the network should compute the error of loss function w.r.t the outputs of the last layer, which is the duty of the network and layers are not aware of it.
 
 ## activation functions
 
@@ -35,6 +35,6 @@ Existing functions need to be broadcasted to the whole array as they are for a s
 
 ## initialization
 
-Randomly initialization of the weights is the common choice. But to prevent the activation function getting saturated, maybe the weights of edges point to the same output neuron should be normalized and sum to 1.
+Randomly initialization of the weights is the common choice. But to prevent the activation function from getting saturated, maybe the weights of edges point to the same output neuron should be normalized and sum to 1.
 
 
