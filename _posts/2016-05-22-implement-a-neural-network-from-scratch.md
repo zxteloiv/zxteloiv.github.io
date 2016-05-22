@@ -11,7 +11,7 @@ Usually we build networks using many existing frameworks. But at the beginning o
 
 One of the key points in neural networks is the back propagation algorithm, and as I explained [before](http://libzx.so/note/learning/2016/05/12/yet-another-tutorial-for-back-propagation.html), the algorithm can be seen as another dynamic programming. We can benefit from this when writing codes.
 
-Example codes are writing in Julia.
+[Example codes](https://github.com/zxteloiv/julia-ex/tree/master/neural_networks) are written in Julia.
 
 ## class design
 
