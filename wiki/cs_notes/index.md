@@ -14,6 +14,8 @@ math_support: mathjax
 
 [Port_Exhausted_When_Accessing_Local_Server](Port_Exhausted_When_Accessing_Local_Server)
 
+[awk_snippets](awk_snippets)
+
 [docker](docker)
 
 [ggplot](ggplot)
