@@ -4,6 +4,8 @@ title: pattern_recognition
 math_support: mathjax
 ---
 
+[Ch10_feature_extraction](Ch10_feature_extraction)
+
 [Ch1_Introduction_to_Pattern_Recognition](Ch1_Introduction_to_Pattern_Recognition)
 
 [Ch2_Bayesian_Decision_Theory](Ch2_Bayesian_Decision_Theory)
