@@ -17,19 +17,19 @@ find the best among those feasible models for linear-separable data
 
 1\. 分类正确，且没有尺度：
 
-$$w^Tx + b \> 0 \\to y(w^Tx + b) \\ge c$$
+$$w^Tx + b \> 0 \to y(w^Tx + b) \ge c$$
 
 方便起见 c 取 1
 
 2\. 最优，距离最大：
 
-$$\\frac{\\vert 1 - (-1) \\vert}{\\Vert w \\Vert} = \\frac{2}{\\Vert w \\Vert}$$
+$$\frac{\vert 1 - (-1) \vert}{\Vert w \Vert} = \frac{2}{\Vert w \Vert}$$
 
 is equivalent to
 
 $$
-\\min \\frac{\\Vert w \\Vert}{2} \\
-s.t. \\, y\_i(w^Tx\_i + b) - 1 \\ge 0, i = 1, 2, \\dots, N
+\min \frac{\Vert w \Vert}{2} \
+s.t. \, y\_i(w^Tx\_i + b) - 1 \ge 0, i = 1, 2, \dots, N
 $$
 
 ...solve...
@@ -51,7 +51,7 @@ the map function is hard to find but it's easier to find the dot product of the 
 the kernel
 
 $$
-K(x\_i, x\_j) = \\Phi(x\_i)^T\\Phi(x\_j)
+K(x\_i, x\_j) = \Phi(x\_i)^T\Phi(x\_j)
 $$
 
 the kernel matrix should be
