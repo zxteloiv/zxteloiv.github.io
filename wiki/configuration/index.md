@@ -14,6 +14,8 @@ math_support: mathjax
 
 [dd_status](dd_status)
 
+[luarocks](luarocks)
+
 [nginx_multi_server](nginx_multi_server)
 
 [ubuntu_14.04_vps](ubuntu_14.04_vps)
