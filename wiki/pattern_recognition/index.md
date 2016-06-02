@@ -4,7 +4,7 @@ title: pattern_recognition
 math_support: mathjax
 ---
 
-[Ch10_feature_extraction](Ch10_feature_extraction)
+[Ch10_feature_extraction_and_selection](Ch10_feature_extraction_and_selection)
 
 [Ch1_Introduction_to_Pattern_Recognition](Ch1_Introduction_to_Pattern_Recognition)
 
@@ -23,6 +23,8 @@ math_support: mathjax
 [Ch8_data_clustering](Ch8_data_clustering)
 
 [Ch9_Support_Vector_Machine](Ch9_Support_Vector_Machine)
+
+[Final_Exam](Final_Exam)
 
 [Homework_1](Homework_1)
 
