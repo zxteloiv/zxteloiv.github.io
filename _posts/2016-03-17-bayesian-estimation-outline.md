@@ -116,7 +116,7 @@ $$
 
 $$
 \mu_n = \frac{\sigma_0^2}{\sigma_0^2 + \sigma^2 / n} \bar x_n + \frac{\sigma^2 / n}{\sigma_0^2 + \sigma^2 / n} \mu_0 \\
-x_n = \sum_k x_k / n
+\bar x_n = \sum_k x_k / n
 $$
 
 观察右边的性质：
@@ -128,10 +128,32 @@ $$
 
 若是多元分布的情况也类似。
 
-### conclusion
+### 4. 总结
 
-好奇怪... 忘了之前纠结的地方在哪了，又要重新读一遍课本吗 >A<
+最后，回顾一下两个估计的区别，最初从后验出发（假设先验与数据集无关）：
 
+$$
+P(c_j \vert x, D) = p(x \vert c_j, D) P(c_j) / p(x \vert D)
+$$
+
+问题就转化为有了数据集怎么求密度函数，这里我们只考虑一个类的密度函数、一个类的数据集，那么记号可以进一步简化，并用贝叶斯公式变换：
+
+$$
+\begin{align}
+p(x \vert c_j, D)
+    &= p(x \vert D) \\ 
+    &= \int p(x, \theta \vert D) d\theta \\
+    &= \int p(x \vert \theta, D) p(\theta \vert D) d\theta \\
+    &= \int p(x \vert \theta) p(\theta \vert D) d\theta
+\end{align}
+$$
+
+到这里，我们可以比较清晰地看出区别了：
+
+1. 在 MLE 方法里，我们假设参数是固定但未知的，因此上面积分没有意义，参数也只需要用 $$p(\theta\vert D) = p(D \vert \theta) p(\theta) / Z$$ 来求出概率最大的那个参数值，也就等价于求最大似然估计值
+2. 在贝叶斯估计中，我们还进一步假设参数不是固定的，而是一个随机变量，但一旦确定下来，密度函数的形式也就随之确定。
+
+因此，贝叶斯估计中问题进一步转换，变成要求 $$p(\theta \vert D)$$ 的估计，用贝叶斯公式将其展开后，进一步假设参数的可能分布，以及参数确定后密度函数的分布形式，才能继续推导下去。
 
 
 
