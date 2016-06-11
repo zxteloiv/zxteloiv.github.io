@@ -40,6 +40,8 @@ math_support: mathjax
 
 [Treebank_Annotator_Tags](Treebank_Annotator_Tags)
 
+[ansj_segmentation_POS_annotation](ansj_segmentation_POS_annotation)
+
 [attention_based_model](attention_based_model)
 
 [character_model](character_model)
