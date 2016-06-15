@@ -5,9 +5,9 @@ math_support: mathjax
 ---
 
 
-# Bayesian Decision
+## Bayesian Decision
 
-## decision theory
+### decision theory
 min error:
 
 $$
@@ -22,7 +22,7 @@ $$
 
 for every single x, find the minimized error / risk to make the whole loss minimized.
 
-## normal distribution
+### normal distribution
 
 $$
 p({\bf x} \mid \theta) = \frac{1}{\sqrt[d]{2\pi} \,\vert\Sigma\vert^{1/2}}
@@ -34,7 +34,7 @@ properties:
 - linear: $$A^TX \sim N(A^T\mu, A^T\Sigma A)$$
 - whiten: $$A_w = \Phi \Lambda^{-1/2}$$
 
-# non-parametric estimation
+## non-parametric estimation
 
 region:
 
@@ -66,9 +66,9 @@ two way to fix a variable:
 - k-means, $$k = \sqrt{n}$$
 - parzen window, $$V_n = 1/h_n^d$$
 
-# parametric estimation
+## parametric estimation
 
-## MLE / BE:
+### MLE / BE:
 
 key: 
 
@@ -80,7 +80,7 @@ MLE find the max theta that $$p(\theta\mid D) = \frac{p(D \mid \theta)\, p(\thet
 
 BE find max $$p(\theta\mid D) = \int p(D\mid\theta)p(\theta)d\theta$$
 
-## EM: 
+### EM: 
 
 in order to maximize $$L(\theta) = \log P(Y\mid\theta)=\log(\int_Z P(Y\mid Z,\theta)P(Z\mid\theta)\,dZ\,)$$
 
@@ -92,9 +92,9 @@ $$
 \theta^{(i+1)} = \arg\max_\theta Q(\theta, \theta^{(i)})= \arg\max_\theta E_Z[\ln P(Y, Z\mid \theta)\mid Y, \theta^{(i)}]
 $$
 
-# SVM
+## SVM
 
-## original model
+### original model
 
 $$
 \min \frac{1}{2}\Vert w\Vert^2 \\
@@ -113,16 +113,16 @@ $$
 
 then the lagrange duality may apply
 
-## relaxed model:
+### relaxed model:
 
 $$
 \min \frac{1}{2}\Vert w\Vert^2 + C\sum_i\xi_i\\
 s.t.\, y_i(w^Tx_i+b) \ge 1 - \xi_i
 $$
 
-# feature extraction
+## feature extraction
 
-## PCA
+### PCA
 
 - way1: minimize the variation of projected samples
 - way2: minimize the difference(least square) of reconstructed samples
@@ -142,7 +142,7 @@ E(B, Y, c) = \sum_n\sum_i \Vert x_i^{(n)} - \tilde x_i^{(n)} \Vert^2 \\
 \therefore E = tr((X-BY)^T(X-BY))
 $$
 
-## LDA
+### LDA
 
 to minimize the loss within classes and maximize the loss between classes
 
@@ -152,7 +152,7 @@ J_2 = S_1 + S_2, \, S_i=\frac{1}{n}\sum_{j\in c_i} (w^Tx_j - m_i)^2 \\
 \max J = J_1 / J_2
 $$
 
-## KPCA
+### KPCA
 
 replace the reconstruction with kernels (???)
 
@@ -160,7 +160,7 @@ $$
 \tilde x = w^T\phi(x)
 $$
 
-## LLE
+### LLE
 
 using neighbor to reconstruct the data
 
@@ -186,14 +186,14 @@ $$
 
 result is eigenvectors of M (???)
 
-# feature selection
+## feature selection
 
 - criterion
 - searching methods: branch and bound, gene, forward/backward greedy algorithms
 
-# clustering
+## clustering
 
-## mixture
+### mixture
 
 start from the mixture density:
 
@@ -201,34 +201,34 @@ $$
 p(x\mid\theta) = \sum_i P(w_i)p(x\mid\theta_i)
 $$
 
-## hierarchical
+### hierarchical
 
 every points is a cluster -> every points is assigned into a big cluster
 
 - find the minimal dist within a class that is the smallest
 - use the max dist between class
 
-## spectral
+### spectral
 
 generalized graph nodes and edges for points and similarity.
 
 simplest: L = D - W
 
-# linear discriminant functions
+## linear discriminant functions
 
-## perceptron
+### perceptron
 
 - perceptron: $$J = \sum(-a^Ty)$$
 - add a margin to the boundary: $$a^Ty > b$$
 - single sample update and batch update
 
-## relaxation
+### relaxation
 
 $$
 J = \frac{1}{2}\sum_y \frac{(a^Ty-b)^2}{\Vert y\Vert^2}
 $$
 
-## MSE
+### MSE
 
 $$
 J = \sum_i(a^Ty_i - b)^2
