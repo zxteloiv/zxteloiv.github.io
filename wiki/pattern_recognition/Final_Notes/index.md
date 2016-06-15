@@ -220,7 +220,7 @@ simplest: L = D - W
 
 - perceptron: $$J = \sum(-a^Ty)$$
 - add a margin to the boundary: $$a^Ty > b$$
-- single sample and batch sample
+- single sample update and batch update
 
 ## relaxation
 
@@ -241,8 +241,12 @@ solve:
 
 ## model selection
 
-- no free lunch
-- adaboost: 
+no free lunch
+
+visualize ROC curve: http://www.navan.name/roc/
+
+ 
+### adaboost
 
 $$
 w, G(x) \\
