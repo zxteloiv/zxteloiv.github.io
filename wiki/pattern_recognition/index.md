@@ -26,6 +26,8 @@ math_support: mathjax
 
 [Final_Exam](Final_Exam)
 
+[Final_Notes](Final_Notes)
+
 [Homework_1](Homework_1)
 
 [Homework_2](Homework_2)
