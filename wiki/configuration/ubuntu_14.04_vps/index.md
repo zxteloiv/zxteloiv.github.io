@@ -37,7 +37,12 @@ password
 passwd demo
 ~~~
 
-use visudo to give permission
+use `visudo` to give permission:
+~~~bash
+visudo
+~~~
+
+add a new line:
 
 ~~~
 demo ALL=(ALL:ALL) ALL
@@ -90,6 +95,28 @@ sudo apt-get install gcc g++ autoconf make libssl-dev openssl
 ~~~ bash
 sudo dpkg-reconfigure tzdata
 ~~~
+
+### python configuration
+
+自己编译
+
+~~~ bash
+wget https://www.python.org/ftp/python/2.7.11/Python-2.7.11.tar.xz
+tar xJf Python-2.7.11.tar.xz 
+cd Python-2.7.11
+
+./configure --prefix=/home/zx/local/python27 --with-ensurepip=install --enable-ipv6 --enable-profiling --enable-framework
+~~~
+
+官方源>软件官方ppa>第三方ppa>软件官方预编译>make deb>>>自己编译
+
+~~~ bash
+sudo add-apt-repository ppa:fkrull/deadsnakes-python2.7
+sudo apt update
+sudo apt install python2.7
+~~~
+
+个人账户推荐用 https://github.com/yyuu/pyenv 管理 python 版本
 
 ### reference
 - init ubuntu 14.04 [tutorial](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-14-04)

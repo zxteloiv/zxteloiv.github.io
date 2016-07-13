@@ -5,6 +5,8 @@ math_support: mathjax
 ---
 
 
+自己编译
+
 ~~~ bash
 wget https://www.python.org/ftp/python/2.7.11/Python-2.7.11.tar.xz
 tar xJf Python-2.7.11.tar.xz 
@@ -16,9 +18,10 @@ cd Python-2.7.11
 官方源>软件官方ppa>第三方ppa>软件官方预编译>make deb>>>自己编译
 
 ~~~ bash
-sudo add-apt-repository fkrull/deadsnakes-python2.7
+sudo add-apt-repository ppa:fkrull/deadsnakes-python2.7
 sudo apt update
 sudo apt install python2.7
 ~~~
+
 
 
