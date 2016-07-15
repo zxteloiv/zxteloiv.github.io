@@ -4,6 +4,8 @@ title: nlp
 math_support: mathjax
 ---
 
+[BinaryNet_and_Swivel](BinaryNet_and_Swivel)
+
 [CNN_for_NLP](CNN_for_NLP)
 
 [ClueWeb09_Dataset](ClueWeb09_Dataset)
@@ -59,6 +61,4 @@ math_support: mathjax
 [optimization._ncg](optimization._ncg)
 
 [tensor_method](tensor_method)
-
-[快来还债，春节期间那些重要的论文](快来还债，春节期间那些重要的论文)
 
