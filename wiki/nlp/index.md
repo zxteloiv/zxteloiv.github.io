@@ -10,6 +10,8 @@ math_support: mathjax
 
 [ClueWeb09_Dataset](ClueWeb09_Dataset)
 
+[Crawler_Notes](Crawler_Notes)
+
 [Deep_Learning_for_NLP_survey](Deep_Learning_for_NLP_survey)
 
 [Deep_Learning_toolkit](Deep_Learning_toolkit)
