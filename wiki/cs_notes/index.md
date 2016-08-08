@@ -14,6 +14,8 @@ math_support: mathjax
 
 [Port_Exhausted_When_Accessing_Local_Server](Port_Exhausted_When_Accessing_Local_Server)
 
+[advanced_data_structures_and_algorithms](advanced_data_structures_and_algorithms)
+
 [awk_snippets](awk_snippets)
 
 [docker](docker)
@@ -43,6 +45,8 @@ math_support: mathjax
 [python_script_framework](python_script_framework)
 
 [react_web_programming](react_web_programming)
+
+[type_theory](type_theory)
 
 [vim_reference](vim_reference)
 

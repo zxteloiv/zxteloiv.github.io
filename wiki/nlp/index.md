@@ -56,6 +56,8 @@ math_support: mathjax
 
 [entity_linking](entity_linking)
 
+[inside_outside_algorithm](inside_outside_algorithm)
+
 [meeting_Cross_Lingual_Multi_domain_QA](meeting_Cross_Lingual_Multi_domain_QA)
 
 [multi_modal_concept](multi_modal_concept)
