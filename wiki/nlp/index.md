@@ -40,6 +40,8 @@ math_support: mathjax
 
 [Penn_Treebank_II_Constituent_Tags](Penn_Treebank_II_Constituent_Tags)
 
+[READLIST](READLIST)
+
 [Sentimental_analysis](Sentimental_analysis)
 
 [Survey_Question_Answering_Papers](Survey_Question_Answering_Papers)
@@ -57,6 +59,8 @@ math_support: mathjax
 [entity_linking](entity_linking)
 
 [inside_outside_algorithm](inside_outside_algorithm)
+
+[logic_programming](logic_programming)
 
 [meeting_Cross_Lingual_Multi_domain_QA](meeting_Cross_Lingual_Multi_domain_QA)
 
