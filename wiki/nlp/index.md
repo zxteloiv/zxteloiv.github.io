@@ -42,6 +42,8 @@ math_support: mathjax
 
 [READLIST](READLIST)
 
+[Semantic_Parsing_Papers](Semantic_Parsing_Papers)
+
 [Sentimental_analysis](Sentimental_analysis)
 
 [Survey_Question_Answering_Papers](Survey_Question_Answering_Papers)
