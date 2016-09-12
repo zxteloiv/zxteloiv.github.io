@@ -176,6 +176,161 @@ GENLEX is controlled by rules, and will be insufficient if the rules don't cover
 
 GENLEX doesn't trigger a category suitable for the _through_-adjunct be placed ahead.
 
+## Wong, Mooney, 2006
+
+Learning for Semantic Parsing with Statistical Machine Translation
+
+### tags
+
+NAACL-2006, SCFG, WASP, MT technique for alignments,
+
+robustness to variations in:
+
+- task complexity
+- word order
+
+### model
+
+#### synchronous CFG:
+
+![QQ20160911-0@2x.png](resources/D594E4BE52165BC53A57FD20B84228D5.png)
+
+![QQ20160911-1@2x.png](resources/2687A6CB624705432194DDD938CAE92B.png)
+
+start from a pair of start symbol (s, s), get a pair as (e, f).
+
+In each grammar rule $$X\to\langle\alpha,\beta\rangle$$, alpha is called a pattern, beta is called a template (Kate et al. 2005)
+
+WASP uses SCFG to model alignments. 
+
+#### parsing
+
+parsing uses a probabilistic model to choose between different derivations
+
+$$
+f^* = m(\arg\max_{\mathrm{d}\in D(G\mid e)}\Pr(\mathrm{d}\mid e; \lambda))
+$$
+
+### learning
+
+learning needs to 
+
+- induce a set of rule (lexicon)
+- a probabilistic model for derivations
+
+#### alignment model
+
+directly using MT techniques does not use MRL grammar, thus **allocation probability mass to MR translations that are not syntactically well-formed**.
+
+alignments of NL words and MR token:
+
+- not all MR token carry specific meanings (e.g. braces)
+- polysemy in MR tokens (in CLang, pt stands for point and position)
+
+conceptual alignment between NL words and MR tokens:
+
+|        | 0 token | 1 token | multiple tokens |
+| ---    | ---     | ---     | ----            |
+| 0 word | -       |  braces | -               |
+| 1 word | -       | polysemy in tokens or synonym in words | - |
+| multiple words | - | - | - |
+
+To simply avoid these problems, present an MR in a production sequence, which correspond to both
+
+- Top-down
+- left-most
+
+derivations .
+
+**MRL grammar** is (or can be made) unambiguous, thus the sequence is unique for a parse.
+
+Grammar + Parse = >  sequence of productions.
+
+Use GIZA++ (Och and Ney, 2003) to obtain the alignments of words and production rules, under the ASSUMPTION: word to production is n-to-1
+
+![QQ20160911-2@2x.png](resources/B7C2365868BAD9190158A1213EF502F8.png)
+
+#### extraction rules from alignments
+
+bottom-up
+
+RHS only contains terminals:
+
+alignment: (our, Team -> our), extract: Team -> (our, our)
+
+RHS also contains non-terminals:
+
+extract: above
+
+Problem: when rules cannot be extracted for some production
+
+use a greedy remove to do alignment fixing
+
+## Wong, Mooney, 2007
+
+Learning Synchronous Grammars for Semantic Parsing with Lambda Calculus
+
+### tags
+
+ACL2007, Synchronous Grammar, lambda-WASP
+
+mainly an improvement over WASP
+
+### modeling and learning
+
+problems: SCFG cannot handle logic variables, ZC05 is robust but still needs hand-written rules.
+
+each rule(production) in SCFG is extended with:
+
+$$ A\to\langle\alpha,\lambda x_1 \cdots\lambda x_k.\beta\rangle$$
+
+under the ASSUMPTION: word to production is n-to-1
+
+### optimization
+
+#### alignment fixing
+
+again the alignment can cause problem that rules cannot be extracted for some predicate.  -> parse and NL are not isomorphic.
+
+To adjust the LF to improve isomorphism, using a graph algorithm.
+
+![QQ20160912-0@2x.png](resources/89FA19D4F19264097249094DB3DD749A.png)
+
+#### MRL language model
+
+- type checking to omit unreal LF parse
+- add new features to trival LF, the the number of times a given rule is used to expand a non-terminal in a given parent rule
+
+![QQ20160912-1@2x.png](resources/CFFE85655233B886A5FDFCC3FDE4B82A.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
