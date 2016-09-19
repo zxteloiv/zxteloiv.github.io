@@ -44,6 +44,8 @@ math_support: mathjax
 
 [Semantic_Parsing_Papers_(1993_2010)](Semantic_Parsing_Papers_(1993_2010))
 
+[Semantic_Parsing_Papers_(2011_2013)](Semantic_Parsing_Papers_(2011_2013))
+
 [Sentimental_analysis](Sentimental_analysis)
 
 [Survey_Question_Answering_Papers](Survey_Question_Answering_Papers)
