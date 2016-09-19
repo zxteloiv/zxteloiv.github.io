@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Semantic Parsing Papers (1993 2010)
+title: Semantic Parsing Papers 1993 2010
 math_support: mathjax
 ---
 

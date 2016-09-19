@@ -42,9 +42,9 @@ math_support: mathjax
 
 [READLIST](READLIST)
 
-[Semantic_Parsing_Papers_(1993_2010)](Semantic_Parsing_Papers_(1993_2010))
+[Semantic_Parsing_Papers_1993_2010](Semantic_Parsing_Papers_1993_2010)
 
-[Semantic_Parsing_Papers_(2011_2013)](Semantic_Parsing_Papers_(2011_2013))
+[Semantic_Parsing_Papers_2011_2013](Semantic_Parsing_Papers_2011_2013)
 
 [Sentimental_analysis](Sentimental_analysis)
 
