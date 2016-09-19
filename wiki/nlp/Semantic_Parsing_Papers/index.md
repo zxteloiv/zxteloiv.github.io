@@ -11,7 +11,7 @@ Learn to Parse Database Queries.
 
 ### tags
 
-variable-free logic, shift-reduce parsing, inductive logic programming
+variable-free logic, shift-reduce parsing, inductive logic programming, GeoQuery
 
 ### contents
 
@@ -62,7 +62,7 @@ Learning to Map Sentences to Logical Form: Structured Classification with Probab
 
 ### tags
 
-probabilistic CCG, log-linear model, sentence-LF pair,
+probabilistic CCG, log-linear model, sentence-LF pair, Geo880, Jobs660
 
 (CKY, high-order logic)
 
@@ -182,7 +182,7 @@ Learning for Semantic Parsing with Statistical Machine Translation
 
 ### tags
 
-NAACL-2006, SCFG, WASP, MT technique for alignments,
+NAACL-2006, SCFG, WASP, MT technique for alignments, GeoQuery
 
 robustness to variations in:
 
@@ -272,7 +272,7 @@ Learning Synchronous Grammars for Semantic Parsing with Lambda Calculus
 
 ### tags
 
-ACL2007, Synchronous Grammar, lambda-WASP
+ACL2007, Synchronous Grammar, lambda-WASP, GeoQuery
 
 mainly an improvement over WASP
 
@@ -302,6 +302,313 @@ To adjust the LF to improve isomorphism, using a graph algorithm.
 - add new features to trival LF, the the number of times a given rule is used to expand a non-terminal in a given parent rule
 
 ![QQ20160912-1@2x.png](resources/CFFE85655233B886A5FDFCC3FDE4B82A.png)
+
+## Zettlemoyer, Collins, 2007
+
+Online Learning of Relaxed CCG Grammars for Parsing to Logical Form
+
+### tags
+
+EMNLP/CoNLL 2007, relaxed CCG, ATIS dataset, Geo880
+
+### relax CCG
+
+in addition to the traditional CCG:
+
+- function application
+- function composition
+- type raising
+
+we have relaxed version:
+
+**relaxed function application**
+![QQ20160912-2@2x.png](resources/036BCEB59185C996CA43F93172B681FF.png)
+
+**relaxed function composition**
+![QQ20160912-3@2x.png](resources/3782FC82C92D14C903CC34261B1B4374.png)
+
+**role-hypothesising type shifting** (for missing predicates)
+![QQ20160912-4@2x.png](resources/469168D3C4E7F2507C0C5B15D2885F44.png)
+
+**null-head type shifting** (for missing arguments)
+![QQ20160912-5@2x.png](resources/D989877E31806E5FC9AFBEA71045C869.png)
+
+**crossed functional composition**
+![QQ20160912-6@2x.png](resources/9A2F423E734DAE1CE95F4FB51B4CE055.png)
+
+### online learning
+
+an online learning perceptron algorithm
+
+#### new features:
+
+number of conjunctions of some predicate f with itself in some level of LF,
+and disjunctions, too
+
+#### perceptron learning
+
+change from log-linear model to perceptron, example by example, enable online learning.
+
+![QQ20160912-7@2x.png](resources/40584699171F48BA1FB444D6FE26E9CC.png)
+
+![QQ20160912-8@2x.png](resources/B7B9C907D247D8D4871C6E6189767B75.png)
+
+## Lu, Ng, Lee, Zettlemoyer, 2008
+
+A Generative Model for Parsing Natural Language to Meaning Representations
+
+### tags
+
+hybrid tree, EMNLP 2008, GeoQuery(880), RoboCup(300)
+
+a generative model recursively creates nodes(include both syntactic and semantic infomation) at each level according a Markov process.
+
+- A hybrid tree using sentence and MR
+- an input-output algorithm for inference
+- reranking to make the correct meaning scored highest
+
+### modeling
+
+a hybrid tree
+
+![QQ20160912-9@2x.png](resources/12CFA3B1D28EAE63B463C68B343F5C88.png)
+
+factorized parse
+
+![QQ20160912-11@2x.png](resources/3677B6A3CD4500D759166E8216C342A0.png)
+
+![QQ20160912-10@2x.png](resources/71242BB2BD7E837F29241EF4BAE4EDE0.png)
+
+reranking use an averaged perceptron.
+
+performance not good, detail ignored
+
+## Liang, Jordan, Klein, 2009
+
+Learning Semantic Correspondences with Less Supervision
+
+### tags
+
+generative model, new dataset
+
+### contents
+
+- world state is a full context
+- words is a sentence
+- a scenario is a pair of (state and words)
+
+![QQ20160918-0@2x.png](resources/81637CDC0DEEA104F6B7C922B7DE22F4.png)
+
+#### modeling
+
+- r : set of records
+- f : sequence of fields
+- c : segmentation of w
+- w : words / sentence
+
+$$
+p(r, f, c, w \mid s) = p(r \mid s)p(f \mid r)p(c, w \mid r, f, s)
+$$
+
+#### learning and inferencing
+
+maximize marginal likelihood
+
+$$
+\max_\theta\prod_{(w,s)\in D}\sum_{r,f,c}p(r,f,c,w\mid s;\theta)
+$$
+
+use EM.
+
+## Ge, Mooney, 2009
+
+Learning a Compositional Semantic Parser using an Existing Syntactic Parser
+
+### tags
+
+syntactic to semantic, RoboCup, GeoQuery
+
+#### parser:
+
+- alernative MRs for syntax tree
+- a trained disambiguation model
+
+#### learning:
+
+- alignment method for (words <-> predicates)
+- inducing rules for composition MR
+- disambiguation model (maximum entropy)
+
+### contents
+
+assume: MR is defined by an unambiguous CFG
+
+#### parser:
+
+1. parse tree
+2. annotated leaves (using alignments)
+3. bottom-up composition, including meta-predicate (pseudo-predicate)
+
+given MR Grammar:
+
+![QQ20160918-2@2x.png](resources/6CE50A959307AB3AC313863785B3E275.png)
+
+composition along parse tree:
+
+![QQ20160918-1@2x.png](resources/9C2C9247533098EDCDE3DDF299473784.png)
+
+composition with meta-predicate P_DO:
+
+![QQ20160918-3@2x.png](resources/AAC5E5ACACAD3FEB816F711343936C16.png)
+
+#### learning
+
+alignment lexicon: GIZA++
+
+composition rule induction:
+
+![QQ20160918-4@2x.png](resources/58182245CFD670751DE76899B582FC84.png)
+
+disambiguation model: max-ent
+
+$$
+\Pr(D\mid S,T;\bar\theta)=\frac{\exp\sum_i\theta_if_i(D)}{Z(S,T)}
+$$
+
+then parameter:
+
+$$
+\bar\theta^* =
+  \arg\max_\bar\theta\sum_i\log\sum_{D_i^*}\Pr(D_i^*\mid S_i,T_i;\bar\theta)
+$$
+
+## Clarke et al., 2010
+
+Driving Semantic Parsing from the World's Response
+
+### tags
+
+ACL-2010, constrained optimization, integer linear programming
+
+### feedback 
+
+![QQ20160919-2@2x.png](resources/B8AED7F48C8253B223BE84AAEAD9C8A9.png)
+
+formally, given x(sentence), y(alignment), z(LF), the parsing is
+
+$$
+\hat z = F_w(x)={\arg\max}_{y\in Y,z\in Z}w^T\Phi(x,y,z)
+$$
+
+use feedback +1 / -1 as evidence
+
+![QQ20160919-0@2x.png](resources/E0809DA964A673ACAE9DFAAA8D7BB3EB.png)
+
+take +1 as optimal and all others as suboptimal (aggressively)
+
+![QQ20160919-1@2x.png](resources/6EFAEB5A4DB23D89B77E4801A10BFFA9.png)
+
+### semantic as model
+
+instead of extracting patterns from training data,
+the inference considers entire space of meaning representation and use syntactic information as soft evidence.
+
+$$
+\begin{align}
+F_w(x)
+ &=\arg\max_{y,z}w^T\Phi(x,y,z) \\
+ &=\arg\max_{\alpha,\beta}\sum_{c\in X}\sum_{s\in D}\alpha_{cs}\cdot w^T\Phi_1
+  + \sum_{c,d\in X}\sum_{s,t\in D}\beta_{cs,dt}\cdot w^T\Phi_2
+\end{align}
+
+$$
+
+- first-order decision alpha-s: constituent aligned with symbol 
+- second-order decision bets-s: symbol with another symbol
+
+s.t.
+
+- A consituent is associated with 1 symbol
+- beta(cs,dt) activated iff. alpha(cs) and alpha(dt) activated
+- beta(cs,dt) activated then s is a function and (s, t) is type-consistent
+- functional composition is directional and acyclic
+
+first-order features:
+
+- stemmed word match
+- similarity based on WordNet
+
+second-order features:
+
+- normalized distance of the head words in c and d for beta(cs, dt) on the dependency tree of sentence
+- symbol frequency (regardless of the alignment to text)
+
+## Kwiatkowski et al., 2010
+
+Inducing Probabilistic CCG Grammars from Logical Form with Higher-Order Unification
+
+### tags
+
+EMNLP-2010, GeoQuery, Geo880, Geo250
+
+#### unification
+
+a unification finds f and g, s.t. given h
+
+$$
+h = f(g)\, or\, h = \lambda x. f(g(x))
+$$
+
+#### PCCG
+
+$$
+P(y, z \mid x; \theta, \Lambda) = \frac{\exp(\theta\cdot\phi(x,y,z))}{Z(y',z')} \\
+f(x) = \arg\max_z p(z\mid x; \theta, \Lambda) \\
+p(z \mid x; \theta, \Lambda)
+$$
+
+### inducing new lexicon
+
+start with assigning each sentence a category:
+
+$$
+\text{New York borders Vermont} \vdash S:\text{next_to}(ny,vt)
+$$
+
+split it into:
+
+$$
+\text{New York borders} \vdash S/NP:\lambda x . \text{next_to}(ny,x) \\
+\text{Vermont} \vdash NP : vt
+$$
+
+likewise, do the following
+
+**first**, split the lambda function s.t.
+
+- no unused variables
+- containing no more than N adjuncts
+- no new variable for non-variable expression of the original part
+
+**second**, split category
+
+select how f and g are composited in any of FA, BA, FC, BC (4 basic CCG composition)
+
+![QQ20160919-3@2x.png](resources/D1D1D5E579ACE6973EF3E7F45F522B65.png)
+
+**third**, split lexical items
+
+for all splitted category pair (B, C), consider all i s.t. words 0:i is assigned to B and i:n to C
+
+### overall learning algorithm
+
+![QQ20160919-4@2x.png](resources/DB24B20D78F958B07399F8F958746C19.png)
+
+NEW-LEX(y^*) consider the whole or splitting.
+
+each potential new lexicon, choose the one derived from the best parse with the largest difference between two log probability
+
+
 
 
 
