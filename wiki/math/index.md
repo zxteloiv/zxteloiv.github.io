@@ -26,6 +26,8 @@ math_support: mathjax
 
 [Matrix_Analysis_Outline_6_Generalized_Inverse](Matrix_Analysis_Outline_6_Generalized_Inverse)
 
+[Optimization_1_Overview](Optimization_1_Overview)
+
 [Stochastic_Processes_1.1_Concepts](Stochastic_Processes_1.1_Concepts)
 
 [Stochastic_Processes_1.2 distribution](Stochastic_Processes_1.2 distribution)
