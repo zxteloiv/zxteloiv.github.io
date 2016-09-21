@@ -6,6 +6,8 @@ tags: opencv osx
 categories: main learning
 ---
 
+**Update 2016-09-22:** As Homebrew is upgraded to 1.0, opencv3 formula recevies 3.1.0_4 update too. Now `brew install opencv3` will be ok and no more excessive changes needed.
+
 ### Preliminaries 
 
 #### 1. Python Binding for OpenCV
