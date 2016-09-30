@@ -564,7 +564,7 @@ $$
 $$
 P(y, z \mid x; \theta, \Lambda) = \frac{\exp(\theta\cdot\phi(x,y,z))}{Z(y',z')} \\
 f(x) = \arg\max_z p(z\mid x; \theta, \Lambda) \\
-p(z \mid x; \theta, \Lambda)
+p(z \mid x; \theta, \Lambda) = \sum_y p(y, z \mid x; \theta, \Lambda)
 $$
 
 ### inducing new lexicon

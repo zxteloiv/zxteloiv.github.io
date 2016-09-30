@@ -36,6 +36,8 @@ math_support: mathjax
 
 [Lecture_ 知识图谱与问答系统前沿技术研讨会_暨清华大学“计算未来”博士生论坛](Lecture_ 知识图谱与问答系统前沿技术研讨会_暨清华大学“计算未来”博士生论坛)
 
+[MT_Meetup](MT_Meetup)
+
 [Meetup_memect_knowledge_graph](Meetup_memect_knowledge_graph)
 
 [NLP_Toolkit](NLP_Toolkit)
@@ -47,6 +49,8 @@ math_support: mathjax
 [Semantic_Parsing_Papers_1993_2010](Semantic_Parsing_Papers_1993_2010)
 
 [Semantic_Parsing_Papers_2011_2013](Semantic_Parsing_Papers_2011_2013)
+
+[Semantic_Parsing_Papers_2014_2016](Semantic_Parsing_Papers_2014_2016)
 
 [Sentimental_analysis](Sentimental_analysis)
 

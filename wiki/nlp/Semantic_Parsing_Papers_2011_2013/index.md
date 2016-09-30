@@ -103,9 +103,81 @@ find correct samples and wrong samples, and update parameter
 
 ![QQ20160921-2@2x.png](resources/D402E03508FC6B540432EC8AC0657921.png)
 
+## Goldwasser et al. 2011
 
+Confidence Driven Unsupervised Semantic Parsing
 
+### tags
 
+ACL2011, unsupervised
+
+###idea
+
+if a non-random model produces a prediction pattern multiplt times it is likely 
+to be an indication of an underlying phenomenon in the data.
+
+### confidence
+
+output structures which fall close to the center of mass of these statistics will receive a high confidence score.
+
+### confidence-driven
+
+use a confidence driven EM-like learning will significantly improve the model compared with using only prediction score $$w^T\Phi(x,y,z)$$
+
+### learning
+
+![QQ20160927-2@2x.png](resources/DCAF7D62E08345BBBFD1A79DBDB417DD.png)
+
+### confidence choice
+
+**translation model**
+
+- unigram $$p(z\mid x)=\prod_{i=1}^{\vert z\vert}p(s_i\mid y(s_i))$$
+- bigram $$p(z\mid x)=\prod_{i=1}^{\vert z\vert} p(s_{i-1}(s_i)\mid y(s_{i-1}),y(s_i))$$
+
+**structural proportion**
+
+- Prop(x, z): proportion of #pred\_in\_z and #words\_in\_x
+- AvProp(S): Average over sets
+- PropScore(S, (x,z)) = AvProp(S) - Prop(x, z)
+
+**combined**
+
+use the latter approach to filter out unlikely candidates and ranks the remaining ones using the former approaches
+
+## Poon, 2013
+
+Grounded Unsupervised Semantic Parsing
+
+### tags
+
+ACL 2013, unsupervised, database schema, ATIS
+
+### contents
+
+characteristics:
+
+- leverage database schema
+- start from dep-parse, and added states for mismatching between dep- and sem-parse
+- semantic not needed to train: datetime, logical connector, numerics
+- superlatives are applied to the most restricted case
+
+assign nodes and edges in a dep-parse to various states.
+
+- these states directly come from database schema
+- for NL/parse-MR mismatch, add more states (Raising / Sinking)
+- devise a lexical trigger from DB values, DASH(Pantel et al. 2009) is used to get additional word-pair 
+
+![grounded-unsupervised-parse.png](resources/3BE80433C6BD03BB15B95B60B40B3F7C.png)
+
+**Parsing:**
+
+$$
+P_\theta(d,z)=\frac{1}{Z}\exp\sum_if_i(d,z)\cdot w_i(d,z)
+$$
+
+- inference using tree-Viterbi and inside-outside algo.
+- weights learned from feature-rich EM
 
 
 
