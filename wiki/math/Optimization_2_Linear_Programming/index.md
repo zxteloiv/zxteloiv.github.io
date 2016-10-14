@@ -60,6 +60,8 @@ linear programming: constraint by constraint, feasible region get smaller (set i
 
 ## simplex
 
+典式：右边非负，约束条件有单位阵
+
 ## duality
 
 ## sensitivity
