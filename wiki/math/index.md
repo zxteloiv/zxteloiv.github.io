@@ -30,6 +30,8 @@ math_support: mathjax
 
 [Optimization_2_Linear_Programming](Optimization_2_Linear_Programming)
 
+[Optimization_3_Integer_Programming](Optimization_3_Integer_Programming)
+
 [Stochastic_Processes_1.1_Concepts](Stochastic_Processes_1.1_Concepts)
 
 [Stochastic_Processes_1.2 distribution](Stochastic_Processes_1.2 distribution)

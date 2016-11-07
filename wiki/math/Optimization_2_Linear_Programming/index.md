@@ -62,7 +62,19 @@ linear programming: constraint by constraint, feasible region get smaller (set i
 
 典式：右边非负，约束条件有单位阵
 
+退化问题：表右端有0（基变量取值0）
+无穷最优解：达到最优之后，表下方行有0（进基依然最优解），中间状态下下方为0并不能说明什么，继续迭代找最优解
+
+初始：人为对标准型添加人工变量（每个条件）n+m 个变量，但要求全部出基：
+
+- 大 M 法
+- 两阶段法
+
+若人工变量无法出基：原问题无解
+
 ## duality
+
+原问题最优性条件 => 对偶问题的可行性条件
 
 ## sensitivity
 
