@@ -47,7 +47,7 @@ Passive (unsupervised):
 1. tokenize / lowercase / ...
 2. get entities whose name contains any single words from the question
 3. compute Longest Consecutive Common Subsequence $\sigma$
-4. weighted sum: $$s_e = \alpha \frac{|\sigma|}{|q|} + \beta\frac{|\sigma|}{|e|} + (1-\alpha-\beta)\frac{p}{|q|}$$
+4. weighted sum: $$s_e = \alpha \frac{\vert\sigma\vert}{\vert q\vert} + \beta\frac{\vert\sigma\vert}{\vert e\vert} + (1-\alpha-\beta)\frac{p}{\vert q\vert}$$
 
 Active:
 
