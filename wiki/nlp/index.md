@@ -4,6 +4,8 @@ title: nlp
 math_support: mathjax
 ---
 
+[2016.11.09_Notes_Simple_QA_by_Attentive_CNN](2016.11.09_Notes_Simple_QA_by_Attentive_CNN)
+
 [BinaryNet_and_Swivel](BinaryNet_and_Swivel)
 
 [CNN_for_NLP](CNN_for_NLP)
@@ -41,6 +43,8 @@ math_support: mathjax
 [Meetup_memect_knowledge_graph](Meetup_memect_knowledge_graph)
 
 [NLP_Toolkit](NLP_Toolkit)
+
+[Paddle](Paddle)
 
 [Penn_Treebank_II_Constituent_Tags](Penn_Treebank_II_Constituent_Tags)
 
