@@ -6,6 +6,8 @@ math_support: mathjax
 
 [2016.11.09_Notes_Simple_QA_by_Attentive_CNN](2016.11.09_Notes_Simple_QA_by_Attentive_CNN)
 
+[2016.11.14_Notes_End_to_End_Answer_Extraction_and_Ranking_for_RC](2016.11.14_Notes_End_to_End_Answer_Extraction_and_Ranking_for_RC)
+
 [BinaryNet_and_Swivel](BinaryNet_and_Swivel)
 
 [CNN_for_NLP](CNN_for_NLP)

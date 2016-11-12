@@ -32,6 +32,8 @@ math_support: mathjax
 
 [Optimization_3_Integer_Programming](Optimization_3_Integer_Programming)
 
+[Optimization_4_Non_linear_Programming](Optimization_4_Non_linear_Programming)
+
 [Stochastic_Processes_1.1_Concepts](Stochastic_Processes_1.1_Concepts)
 
 [Stochastic_Processes_1.2 distribution](Stochastic_Processes_1.2 distribution)
