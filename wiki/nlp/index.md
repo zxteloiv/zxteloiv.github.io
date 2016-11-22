@@ -8,6 +8,8 @@ math_support: mathjax
 
 [2016.11.14_Notes_End_to_End_Answer_Extraction_and_Ranking_for_RC](2016.11.14_Notes_End_to_End_Answer_Extraction_and_Ranking_for_RC)
 
+[2016.11.22_Notes_Neural_Symbolic_Machines](2016.11.22_Notes_Neural_Symbolic_Machines)
+
 [BinaryNet_and_Swivel](BinaryNet_and_Swivel)
 
 [CNN_for_NLP](CNN_for_NLP)
