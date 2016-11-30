@@ -10,6 +10,8 @@ math_support: mathjax
 
 [2016.11.22_Notes_Neural_Symbolic_Machines](2016.11.22_Notes_Neural_Symbolic_Machines)
 
+[2016.11.29_Notes_Query_Reduction_Networks_for_QA](2016.11.29_Notes_Query_Reduction_Networks_for_QA)
+
 [BinaryNet_and_Swivel](BinaryNet_and_Swivel)
 
 [CNN_for_NLP](CNN_for_NLP)
