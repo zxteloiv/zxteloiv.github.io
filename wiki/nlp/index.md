@@ -12,6 +12,8 @@ math_support: mathjax
 
 [2016.11.29_Notes_Query_Reduction_Networks_for_QA](2016.11.29_Notes_Query_Reduction_Networks_for_QA)
 
+[2016.12.06_Notes_Geometry_of_Compositionality](2016.12.06_Notes_Geometry_of_Compositionality)
+
 [BinaryNet_and_Swivel](BinaryNet_and_Swivel)
 
 [CNN_for_NLP](CNN_for_NLP)
