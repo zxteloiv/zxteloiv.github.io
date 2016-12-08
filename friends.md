@@ -12,6 +12,8 @@ And thank you for reading these words, too.
 
 <a target="_blank" href="http://molun.net/">未元境界</a>: God Lun the Writer.
 
+<a target="_blank" href="https://banana.moe">Kamikat's Blog</a>: 好吃可爱的兔耳猫.
+
 <a target="_blank" href="http://www.neutronest.moe/">λ neutronest</a>: λ 神. 扑通 (超).
 
 <a target="_blank" href="http://blog.atelier39.org/">未来代码研究所</a>: 马家沟校友.
