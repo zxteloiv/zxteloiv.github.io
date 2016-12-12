@@ -14,6 +14,8 @@ math_support: mathjax
 
 [2016.12.06_Notes_Geometry_of_Compositionality](2016.12.06_Notes_Geometry_of_Compositionality)
 
+[2016.12.13_Notes_Coupling_Distributed_and_Symbolic_Execution_for_NLQ](2016.12.13_Notes_Coupling_Distributed_and_Symbolic_Execution_for_NLQ)
+
 [BinaryNet_and_Swivel](BinaryNet_and_Swivel)
 
 [CNN_for_NLP](CNN_for_NLP)
