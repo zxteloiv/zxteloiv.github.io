@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 2016.13.20 Notes Inferring LF from Denotations
+title: 2016.12.20 Notes Inferring LF from Denotations
 math_support: mathjax
 ---
 
