@@ -16,6 +16,8 @@ math_support: mathjax
 
 [2016.12.13_Notes_Coupling_Distributed_and_Symbolic_Execution_for_NLQ](2016.12.13_Notes_Coupling_Distributed_and_Symbolic_Execution_for_NLQ)
 
+[2016.13.20_Notes_Inferring_LF_from_Denotations](2016.13.20_Notes_Inferring_LF_from_Denotations)
+
 [BinaryNet_and_Swivel](BinaryNet_and_Swivel)
 
 [CNN_for_NLP](CNN_for_NLP)
@@ -73,6 +75,8 @@ math_support: mathjax
 [Survey_Question_Answering_Papers](Survey_Question_Answering_Papers)
 
 [Treebank_Annotator_Tags](Treebank_Annotator_Tags)
+
+[VAE_related](VAE_related)
 
 [ansj_segmentation_POS_annotation](ansj_segmentation_POS_annotation)
 
