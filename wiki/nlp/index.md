@@ -18,6 +18,8 @@ math_support: mathjax
 
 [2016.12.20_Notes_Inferring_LF_from_Denotations](2016.12.20_Notes_Inferring_LF_from_Denotations)
 
+[2016.12.27_Notes_Neural_Programmer](2016.12.27_Notes_Neural_Programmer)
+
 [BinaryNet_and_Swivel](BinaryNet_and_Swivel)
 
 [CNN_for_NLP](CNN_for_NLP)
