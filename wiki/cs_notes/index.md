@@ -22,6 +22,8 @@ math_support: mathjax
 
 [ggplot](ggplot)
 
+[java_series](java_series)
+
 [julia_resources](julia_resources)
 
 [latex_memo](latex_memo)

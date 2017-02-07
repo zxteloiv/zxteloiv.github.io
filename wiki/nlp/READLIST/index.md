@@ -60,6 +60,19 @@ http://blog.klipse.tech/lambda/2016/07/24/lambda-calculus-1.html
 http://palmstroem.blogspot.com/2012/05/lambda-calculus-for-absolute-dummies.html
 http://www.inf.fu-berlin.de/lehre/WS03/alpi/lambda.pdf
 
+mxnet:
+
+http://mxnet.io/api/python/symbol.html#executing-symbols
+http://mxnet.io/api/python/symbol.html#testing-utility-reference
+http://mxnet.io/tutorials/nlp/cnn.html
+https://github.com/dmlc/mxnet-notebooks/blob/master/python/tutorials/bucket_io.py
+https://github.com/dmlc/mxnet/blob/master/example/rnn/lstm.py
+https://github.com/dmlc/mxnet-notebooks/blob/master/python/tutorials/char_lstm.ipynb
+https://ljalphabeta.gitbooks.io/mxnet-notes/content/mxnet_python_overview_tutorial.html
+http://mxnet.io/tutorials/index.html#id1
+http://mxnet-tqchen.readthedocs.io/en/latest/packages/python/tutorial.html
+http://mxnet-tqchen.readthedocs.io/en/latest/packages/python/symbol_in_pictures.html
+https://indico.io/blog/getting-started-with-mxnet/
 
 
 

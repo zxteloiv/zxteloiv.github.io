@@ -20,6 +20,12 @@ math_support: mathjax
 
 [2016.12.27_Notes_Neural_Programmer](2016.12.27_Notes_Neural_Programmer)
 
+[2017.01.05_chatbot_meetup](2017.01.05_chatbot_meetup)
+
+[2017.01.11_SE_meetup](2017.01.11_SE_meetup)
+
+[A_Survey_of_Recent_Program_Induction](A_Survey_of_Recent_Program_Induction)
+
 [BinaryNet_and_Swivel](BinaryNet_and_Swivel)
 
 [CNN_for_NLP](CNN_for_NLP)
