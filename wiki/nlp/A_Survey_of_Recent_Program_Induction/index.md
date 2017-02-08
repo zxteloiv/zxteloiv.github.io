@@ -10,9 +10,35 @@ Program Induction 原本只是说从样例输入和输出导出一段程序，�
 
 可以把现有的 Program Induction 方法分为三种[Murray and Krishnamurthy, 2016]：
 
-- Inductive Logic Programming and Program Synthesis, 主要在无噪声的环境下处理输入输出
+- Inductive Logic Programming and Program Synthesis, 主要在无噪声的环境下处理输入输出，前者工作已经较少
 - Probabilistic Programming Language, 主要扩展到了有噪声环境
 - Neural Abstract Machines, 对计算机做抽象并应用神经网络方法
+
+根据自己理解总结，下表可能有误：
+
+| Work                   | Type                    | Task                                     | Explicit Code Output | Training                 | Perfect Generalization | Search Technique |
+| ---------------------- | ----------------------- | ---------------------------------------- | -------------------- | ------------------------ | ---------------------- | ---------------- |
+| NP (Neeklakantan)      | Neural Abstract Machine | Table QA(syn)1                           | Continuous 2         | Weak supervision         | Partial 3              | GD               |
+| DNS (Graves)           | Neural Abstract Machine | bAbI, Graph Query                        | No                   | Supervised               | No                     | GD               |
+| Coupling (Mou)         | Neural Abstract Machine | Table QA(syn)                            | Continuous           | Weak supervision         | No                     | GD+REINFORCE     |
+| NSM (Liang)            | Neural Abstract Machine | Table QA(syn)                            | Yes                  | Weak supervision         | No                     | REINFORCE        |
+| Neural Forth (Bošnjak) | Program Synthesis       | Bubble Sort + Addition                   | Continuous           | I/O and machine states   | Partial                | GD               |
+| HGCNN (Gong)           | Program Synthesis       | Synthetic Tasks 4                        | Yes                  | Unsupervised (Generated) | No                     | ?                |
+| DeepCoder (Balog)      | Program Synthesis       | DSL Sample 5                             | Yes                  | Unsupervised (Generated) | No                     | GD+Enumeration   |
+| R3NN (Parisotto)       | Program Synthesis       | DSL Sample + FlashFill                   | Yes                  | Unsupervised (Generated) | No                     | Generative Model |
+| NPI (Reed)             | Program Synthesis       | Addition + Bubble Sort + Car canonicalcize | Yes                | Supervised (Traces)      | No                     | GD               |
+| NPI + Recursion (Cai)  | Program Synthesis       | Addition + BubbleSort + QuickSort + Topo. Sort | Yes            | Supervised (Traces)      | Yes (Proven)           | GD(Adam)         |
+| Neural FP (Feser)      | Probabilistic PL        | Synthetic Tasks                          | ?                    | Supervised               | Partial                | GD               |
+| NTPT (Gaunt)           | Probabilistic PL        | Arithmetic on Image                      | ?                    | Weak supervision         | No                     | ?                |
+
+表中：
+
+1. 自己合成的 QA 数据集
+2. 实际生成的是代码(操作符)的概率，选概率最大即可得到一系列显式代码
+3. 在一部分任务上达到了100%泛化
+4. 在自定义的一些合成任务上完成
+5. 在 DSL 中随机采样得到的数据集上完成
+
 
 ## Neural Programmer
 
@@ -488,12 +514,24 @@ TerpreT 是一种概率编程语言，相关工作来自微软研究院。Terpre
 
 ## Neural-Symbolic Program Synthesis
 
-本文工作来自CMU和微软研究院。
+本文工作来自CMU和微软研究院。本文设计了一个树结构的生成模型，通过把I/O样本编码进来，树结构可以自动选择DSL中的某条产生式应用到非终结符上，从而增量地生成程序。
 
-## thought
+**模型**
 
-- sketch is something like to combine different NNs with other symbolic program codes
-- low-level abstraction is aiming reusability across tasks, otherwise it's not practical to implement.
+树结构有四种参数：
+
+- 符号（叶子节点）的表示：所有终结符和非终结符的 embedding
+- 产生式（中间节点）的表示：所有 DSL 中包含的产生式的 embedding
+- 归约网络：通过产生式右边的 embedding 生成左边的 embedding
+- 派生网络：通过产生式左边的 embedding 生成右边的 embedding
+
+这样从叶子节点出发，递归向上传递，直到根节点，此时根节点就能包括全局信息。然后反向递归，再由根节点向下，这样把全局信息带到每个中间节点上。当需要派生时，由叶子节点的表示和产生式的表示的内积作 softmax 权重进行选择。
+
+![QQ20170208-201118.png](resources/DFC2463987CDFA2A6600B25542D3D2E3.png)
+
+而 encoder 部分，本文以两个单独的 Bi-LSTM 为基础，又尝试了考虑二者相关性的 correlation-encoder 和几种变形。
+
+![CrossCorr.jpg](resources/25FE64A7DBDDA9B62B76A5EF7CAF1A0A.jpg)
 
 ## 相关文章
 
