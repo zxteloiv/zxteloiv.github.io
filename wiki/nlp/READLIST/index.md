@@ -74,5 +74,15 @@ http://mxnet-tqchen.readthedocs.io/en/latest/packages/python/tutorial.html
 http://mxnet-tqchen.readthedocs.io/en/latest/packages/python/symbol_in_pictures.html
 https://indico.io/blog/getting-started-with-mxnet/
 
+wikipedia dump:
+
+https://en.wikipedia.org/wiki/Wikipedia:Database_download#Where_are_the_uploaded_files_.28image.2C_audio.2C_video.2C_etc..2C_files.29.3F
+https://meta.wikimedia.org/wiki/Data_dumps
+https://en.wikipedia.org/wiki/Wikipedia:Database_download#Static_HTML_tree_dumps_for_mirroring_or_CD_distribution
+https://www.mediawiki.org/wiki/Alternative_parsers
+https://www.mediawiki.org/wiki/Manual:Importing_XML_dumps
+https://www.mediawiki.org/wiki/Manual:MWDumper
+
+
 
 
