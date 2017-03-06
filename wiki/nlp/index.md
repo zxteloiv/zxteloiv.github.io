@@ -26,6 +26,8 @@ math_support: mathjax
 
 [2017.02.28_Notes_Use_Generalized_Representations_But_Do_Not_Forget_Surface_Features](2017.02.28_Notes_Use_Generalized_Representations_But_Do_Not_Forget_Surface_Features)
 
+[2017.03.07_Notes_Bilateral_Multi_Perspective_Matching_for_NL_Sentences](2017.03.07_Notes_Bilateral_Multi_Perspective_Matching_for_NL_Sentences)
+
 [A_Survey_of_Recent_Program_Induction](A_Survey_of_Recent_Program_Induction)
 
 [BinaryNet_and_Swivel](BinaryNet_and_Swivel)
