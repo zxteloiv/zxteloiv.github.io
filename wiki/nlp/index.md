@@ -28,6 +28,8 @@ math_support: mathjax
 
 [2017.03.07_Notes_Bilateral_Multi_Perspective_Matching_for_NL_Sentences](2017.03.07_Notes_Bilateral_Multi_Perspective_Matching_for_NL_Sentences)
 
+[2017.03.21_Notes_What_to_talk_about_and_how_Selective_Generation_via_LSTM_and_Alignment](2017.03.21_Notes_What_to_talk_about_and_how_Selective_Generation_via_LSTM_and_Alignment)
+
 [A_Survey_of_Recent_Program_Induction](A_Survey_of_Recent_Program_Induction)
 
 [BinaryNet_and_Swivel](BinaryNet_and_Swivel)
