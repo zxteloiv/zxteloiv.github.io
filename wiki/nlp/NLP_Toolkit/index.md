@@ -27,6 +27,12 @@ java -mx4g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer [port=9000]
 
 # send post data & get parameter to the server
 wget --post-data 'the quick brown fox jumped over the lazy dog' 'localhost:9000/?properties={"tokenize.whitespace": "true", "annotators": "tokenize,ssplit,pos", "outputFormat": "json"}' -O -
+
+# Run with Chinese
+java -cp "*" -Xmx8g edu.stanford.nlp.pipeline.StanfordCoreNLPServer -serverProperties StanfordCoreNLP-chinese.properties -port 19000
+
+# request
+wget --post-data '我爱北京天安门' 'localhost:19000/?properties={"outputFormat":"json"}' -O -
 ~~~
 
 **Kill Server**
