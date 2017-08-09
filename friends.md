@@ -30,3 +30,5 @@ And thank you for reading these words, too.
 
 <a target="_blank" href="http://blog.cee.moe/">Cee</a>: Hub & Authority 值双巨高的大佬.
 
+<a target="_blank" href="https://bismarck.moe/">雨宫千鹤</a>: 可爱的三叶.
+
