@@ -81,13 +81,13 @@ pyenv 实际上是编译安装，但它管理好了所有目录设置相关的�
 
 # FAQ
 
-\1. Q: 为什么我配好了 pyenv，运行 ipython 时依然调用的是系统的 python？
+\1. Q: 为什么我配好了 pyenv，运行 ipython 时依然调用的是系统的 python？  
 A: 可能由于命令行环境设置的问题，直接断开连接，重新连接服务器即可。
 
-\2. Q: 为什么我配好了 pyenv 导致其他软件（如 vim）安装失败？
+\2. Q: 为什么我配好了 pyenv 导致其他软件（如 vim）安装失败？  
 A: pyenv 是另一套编译安装的 python，例如 UCS 编译选项默认为4，曾经导致 vim 在带上 python 扩展支持进行编译安装时提示找不到一些符号而失败。已经由 vim 方面更新了编译脚本后解决。若其他软件依然遇到此类问题，将 pyenv 临时切换为 system 即可。
 
-\3. Q: 为什么在用了 pyenv 以后有的脚本跑不起来，提示找不到 sqlite3、pysqlite2 或者 bz2 库？
+\3. Q: 为什么在用了 pyenv 以后有的脚本跑不起来，提示找不到 sqlite3、pysqlite2 或者 bz2 库？  
 A: pyenv 是编译安装，而 python 编译时会自动检测系统中有没有对应的 C 依赖库，若不存在，则自动关闭 python 中 bz2 和 sqlite3 的对应编译选项（这点非常令人无语，也就是说虽然这是 python 标准库里的东西但仍可能是机器上缺少的）。因此遇到找不到库之前一般先要搜索一下对应系统的 C 依赖库的包，例如 ubuntu 找不到 sqlite3 要先安装 `sudo apt install libsqlite3-dev`，然后用 `pyenv uninstall 2.7.13 && pyenv install 2.7.13` 重新安装 python（此时依赖库会全部丢失，需要全部重新安装）。
 
 
