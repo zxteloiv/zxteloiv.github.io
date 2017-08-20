@@ -50,6 +50,8 @@ Wikipedia 的 dump 数据大多可以从 [dumps.wikimedia.org](https://dumps.wik
 
 \4. 类别的归属、以及页面对于类别的归属，事实上并不是一个树结构，而是一个非常复杂的图，需要引入更多的先验知识才能把一些局部图结构拆解成树形。因此应该只考虑建立局部的两两之间上下位关系，不应该去试图虑建立全局的 Ontology。
 
+\5. 对中文而言，不同的简繁体之间有所区别。因此会有一个页面属于某个 Category 但那个 Category 却找不到更多上位关系或者直接找不到自身的情况，这可能是由于该 Category 需要做简繁转换（在 zhwiki 上输入时会自动跳转），可以考虑使用 opencc 处理转换，并加入类别重定向来做。
+
 # 进一步扩展
 
 这里讨论的只是一个语言子站的类别，例如单独的 zhwiki 或 enwiki 都可以这么处理。
@@ -58,7 +60,7 @@ Wikipedia 的 dump 数据大多可以从 [dumps.wikimedia.org](https://dumps.wik
 
 页面本身可以跳转，例如中文 wiki 的[光合作用](https://zh.wikipedia.org/wiki/光合作用) 和英文的 [Photosynthesis](https://en.wikipedia.org/wiki/Photosynthesis) 及日文的 [光合成](https://ja.wikipedia.org/wiki/光合成) 之间是可以联系起来的，因此可以认为这三者会对应同一个东西，那么三者对应的 Category 也理应是可以互通的。中文光合作用可以对应到英文的 [Botany 类别](https://en.wikipedia.org/wiki/Category:Botany) 和 [Plant_nutrition 类别](https://en.wikipedia.org/wiki/Category:Plant_nutrition).
 
-类别本身也是有页面的。因此不同语言的类别之间也可以建立对应的等价关系。如果一个中文页面缺失了某个中文类别，但英文页面有该类别的英文版，那可以认为这个中文页面也会对应到该中文类别之上。
+类别本身也是有页面的。因此不同语言的类别之间也可以建立对应的等价关系。例如 [Botany 类别](https://en.wikipedia.org/wiki/Category:Botany) 和[植物学类别](https://zh.wikipedia.org/wiki/Category:植物學)是等价的。如果一个中文页面缺失了某个中文类别，但英文页面有该类别的英文版，那可以认为这个中文页面也会对应到该中文类别之上。
 
 这些对应关系不止可以双语，甚至还可以扩展到三语上（处理起来会稍微有些麻烦）。虽然一般认为英文 Wikipedia 是数据量最大从而最全的，但事实上确实有很多中文、日文的页面、类别是自己特有的，英文不具有。可以认为它应该具有一个类别，但是此类别可能只在日文里有一个现成的符号来描述，缺少中英的对应。
 通过这样的多语链接，可以极大地扩展页面所属的类型项。
