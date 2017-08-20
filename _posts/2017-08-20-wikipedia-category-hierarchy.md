@@ -25,7 +25,7 @@ math_support:
 Wikipedia 的 dump 数据大多可以从 [dumps.wikimedia.org](https://dumps.wikimedia.org/) 中得到。由于只关注文本方面的内容，因此页面的文件附件这里没有去研究过。除了一些年代久远的 dump 以外，最新的数据可以从很多方式获得：
 
 - Database backup dumps: [link](https://dumps.wikimedia.org/backup-index.html) 页面下方有各种子站的链接，包括 Wikimedia 基金会下面的多个其他项目的数据（Wikidata、wikiquote、wikinews 等等）。点 enwiki/zhwiki 进入可以看到一个 dump  清单。由于 Wikipedia 文档非常多，一次 dump 要花很久完成，清单中有一些有用的 sql 文件是 wikipedia 自身数据库表的 dump，一些中间步骤的 xml dump，以及常用的全文 dump（如 enwiki-20170801-pages-articles-multistream.xml.bz2）
-- Other files: 这里有一些奇奇怪怪的 dump，其中 CirrusSearch 的 dump 这次主要也用到了，相较 xml 的全文 dump 而言较为方便。
+- Other files: 这里有一些奇奇怪怪的 dump，其中 CirrusSearch 的 dump 这次主要也用到了，相较 xml 的全文 dump 而言更为方便。
 
 ## 提取
 
@@ -47,6 +47,8 @@ Wikipedia 的 dump 数据大多可以从 [dumps.wikimedia.org](https://dumps.wik
 \2. 重定向信息虽然与 Category 无关，但事实上是必需的。content dump 和 general dump 中都需要提取对应的重定向映射表。Category 也是可能有重定向的，一个旧的 Category 名称可能会被重定向到新的页面。
 
 \3. 可以用 API 查询具体的 pageid 得到对应的 Wikipedia url：https://zh.wikipedia.org/w/api.php?action=query&prop=info&inprop=url&format=json&pageids=1668091
+
+\4. 类别的归属、以及页面对于类别的归属，事实上并不是一个树结构，而是一个非常复杂的图，需要引入更多的先验知识才能把一些局部图结构拆解成树形。因此应该只考虑建立局部的两两之间上下位关系，不应该去试图虑建立全局的 Ontology。
 
 # 进一步扩展
 
