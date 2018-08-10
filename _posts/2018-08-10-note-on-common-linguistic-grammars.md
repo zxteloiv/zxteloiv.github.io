@@ -51,9 +51,9 @@ The **_Consituency Relation_** side mainly focus on syntactic structures like ph
 
 Note the last two are not directly originated from Chomsky's theory.
 
-And the _English Resources Grammar_(ERG) is a hand-crafted, linguistic-motivated HPSG for English only, and produces _English Resource Semantics_(ERS). But this lies on the semantic topic, which will not covered by the post.
+And the _English Resources Grammar_(ERG) is a hand-crafted, linguistic-motivated HPSG for English only, and produces _English Resource Semantics_(ERS). But this lies on the semantic topic, which will not be covered by the post.
 
-And here is the **_Dependency Relation_** side.
+And here is the **_Dependency Relation_** side. Rather than composing words into phrases, this approach emphasize relations between any two words in a sentence.
 
 - Recursive Categorical Syntax(algebraic syntax)
 - Functional Generative Description
