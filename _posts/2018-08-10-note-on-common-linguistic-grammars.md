@@ -84,9 +84,9 @@ Then we can conclude the expressive power of them, from less expressive to stron
 
 - Regular Grammar
 - CFG
-- GCFG
-- LCFRS
 - Head Grammar, Linear Indexed Grammar, CCG, TAG, LTAG, HPSG
+- LCFRS
+- GCFG
 - CSG
 - Unrestricted
 
