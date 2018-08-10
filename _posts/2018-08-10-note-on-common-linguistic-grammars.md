@@ -25,7 +25,7 @@ It is common to augment a CFG with some extensions, making it more powerful and 
 
 - Generalzed CFG
 - Linear Context-Free Rewriting Grammar, which as its name suggested is a subclass of GCFG
-- Head Grammar is less powerful LGCFG
+- Head Grammar is less powerful LCFRG
 - Indexed Grammar is another kind of CFG
 - Linear Indexed Grammar is a specialized Indexed Grammar
 
