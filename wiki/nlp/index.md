@@ -30,6 +30,18 @@ math_support: mathjax
 
 [2017.03.21_Notes_What_to_talk_about_and_how_Selective_Generation_via_LSTM_and_Alignment](2017.03.21_Notes_What_to_talk_about_and_how_Selective_Generation_via_LSTM_and_Alignment)
 
+[2017.10.23_meetup_Data_to_Text_Automated_Text_Generation](2017.10.23_meetup_Data_to_Text_Automated_Text_Generation)
+
+[2017.10.31_meetup_lexical_syntactic_analysis_with_heterogeneous_annotations](2017.10.31_meetup_lexical_syntactic_analysis_with_heterogeneous_annotations)
+
+[2017.11.14_meetup_spoken_dialogue_management_from_an_industry_perspective](2017.11.14_meetup_spoken_dialogue_management_from_an_industry_perspective)
+
+[2017.11.22_IR_meetup](2017.11.22_IR_meetup)
+
+[2018.08.20_DL_for_Semantic_Composition_and_NLI](2018.08.20_DL_for_Semantic_Composition_and_NLI)
+
+[2018.09.27_Deep_Learning_and_Probability_models](2018.09.27_Deep_Learning_and_Probability_models)
+
 [A_Survey_of_Recent_Program_Induction](A_Survey_of_Recent_Program_Induction)
 
 [BinaryNet_and_Swivel](BinaryNet_and_Swivel)
@@ -48,6 +60,8 @@ math_support: mathjax
 
 [How_to_read_a_paper_(operational_reference)](How_to_read_a_paper_(operational_reference))
 
+[Intoduction_to_Linguistics_(Course_Notes)](Intoduction_to_Linguistics_(Course_Notes))
+
 [Lecture_Deep_Sentence_Modeling_for_Question_Answering](Lecture_Deep_Sentence_Modeling_for_Question_Answering)
 
 [Lecture_Discovering_Keywords_for_Search,_Covariate_Shift,_and_Lifelong_Learning](Lecture_Discovering_Keywords_for_Search,_Covariate_Shift,_and_Lifelong_Learning)
@@ -55,6 +69,10 @@ math_support: mathjax
 [Lecture_Ensemble_Approaches_to_Class_Imbalance_Learning](Lecture_Ensemble_Approaches_to_Class_Imbalance_Learning)
 
 [Lecture_From_Language_to_Knowledge_and_Back](Lecture_From_Language_to_Knowledge_and_Back)
+
+[Lecture_GAN_tutorial](Lecture_GAN_tutorial)
+
+[Lecture_Loss_Sensitive_GAN_on_Lipschitz_Densities](Lecture_Loss_Sensitive_GAN_on_Lipschitz_Densities)
 
 [Lecture_R_lang](Lecture_R_lang)
 
@@ -70,13 +88,15 @@ math_support: mathjax
 
 [NLP_Toolkit](NLP_Toolkit)
 
+[Neural_Semantic_Parsing_Tutorial_(ACL_2018)](Neural_Semantic_Parsing_Tutorial_(ACL_2018))
+
 [Paddle](Paddle)
 
 [Penn_Treebank_II_Constituent_Tags](Penn_Treebank_II_Constituent_Tags)
 
 [QA_with_Graph_Embedding_2014_2015](QA_with_Graph_Embedding_2014_2015)
 
-[READLIST](READLIST)
+[R_Meetup](R_Meetup)
 
 [Semantic_Parsing_Papers_1993_2010](Semantic_Parsing_Papers_1993_2010)
 
@@ -92,11 +112,15 @@ math_support: mathjax
 
 [VAE_related](VAE_related)
 
+[Wikidata_Data_Model](Wikidata_Data_Model)
+
 [ansj_segmentation_POS_annotation](ansj_segmentation_POS_annotation)
 
 [attention_based_model](attention_based_model)
 
 [character_model](character_model)
+
+[deep_generative_models](deep_generative_models)
 
 [dependency_parsing_annotating_tags](dependency_parsing_annotating_tags)
 
@@ -111,6 +135,8 @@ math_support: mathjax
 [multi_modal_concept](multi_modal_concept)
 
 [optimization._ncg](optimization._ncg)
+
+[reference_types_from_zotero](reference_types_from_zotero)
 
 [tensor_method](tensor_method)
 

@@ -25,7 +25,7 @@ sudo dpkg-reconfigure locales
 create acount
 
 ~~~bash
-useradd --create-home --system --shell /bin/bash demo
+useradd --create-home --system --shell /bin/bash [-d /some/where/else/] demo
 
 # if created error
 sudo usermod -d /new/place/will/be/created -m zxteloiv

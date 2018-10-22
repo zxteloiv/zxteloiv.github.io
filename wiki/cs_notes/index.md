@@ -6,6 +6,8 @@ math_support: mathjax
 
 [BeautifulSoup4](BeautifulSoup4)
 
+[Database_Discussion](Database_Discussion)
+
 [FE_tools_learning](FE_tools_learning)
 
 [Git_commands](Git_commands)
@@ -24,11 +26,15 @@ math_support: mathjax
 
 [java_series](java_series)
 
+[json_in_rdb](json_in_rdb)
+
 [julia_resources](julia_resources)
 
 [latex_memo](latex_memo)
 
 [mathematica_plot](mathematica_plot)
+
+[port_scanning_with_nc](port_scanning_with_nc)
 
 [protocol_exchange_lib](protocol_exchange_lib)
 
@@ -48,9 +54,13 @@ math_support: mathjax
 
 [react_web_programming](react_web_programming)
 
+[router_ipv6](router_ipv6)
+
 [type_theory](type_theory)
 
 [vim_reference](vim_reference)
+
+[wikimedia](wikimedia)
 
 [zmodem_on_mac](zmodem_on_mac)
 

@@ -92,9 +92,7 @@ $$
 $$
 \begin{align}
 scalar\_answer_t &= \alpha_t^{op}(count)count_t + \alpha_t^{op}(diff) diff_t + \sum_{j=1}^C\alpha_t^{col}(j)\alpha_t^{op}(sum)sum_t[j], \\
-
 lookup\_answer_t[i][j] &= \alpha_t^{col}(j)\alpha_t^{op}(assign)assign_t[i][j], \forall (i, j) \\
-
 row\_select_t[i] &= \alpha_t^{op}(and)and_t[i] + \alpha_t^{op}(or)or_t[i] + \alpha_t^{op}(reset)reset_t[i] + \\
     & \sum_{j=K+1}^C \alpha_t^{col}(j)(\alpha_t^{op}(greater)g_t[i][j] + \alpha_t^{op}(lesser)l_t[i][j]) + \\
     & \sum_{j=1}^K \alpha_t^{col}(j)\alpha_t^{op}(text\_match)text\_match_t[i][j], \forall(i, j)
