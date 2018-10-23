@@ -42,6 +42,8 @@ math_support: mathjax
 
 [2018.09.27_Deep_Learning_and_Probability_models](2018.09.27_Deep_Learning_and_Probability_models)
 
+[2018.10.23_Cross_linguality_and_machine_translation_without_bilingual_data](2018.10.23_Cross_linguality_and_machine_translation_without_bilingual_data)
+
 [A_Survey_of_Recent_Program_Induction](A_Survey_of_Recent_Program_Induction)
 
 [BinaryNet_and_Swivel](BinaryNet_and_Swivel)
