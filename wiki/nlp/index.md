@@ -58,6 +58,8 @@ math_support: mathjax
 
 [Deep_Learning_toolkit](Deep_Learning_toolkit)
 
+[Frontier_in_AI](Frontier_in_AI)
+
 [Generative_Adversarial_Networks（GAN）的现有工作](Generative_Adversarial_Networks（GAN）的现有工作)
 
 [How_to_read_a_paper_(operational_reference)](How_to_read_a_paper_(operational_reference))
