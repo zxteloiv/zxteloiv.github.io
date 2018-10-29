@@ -172,7 +172,7 @@ Rosenberg 自尊量表(RSES)
 
 ## 完美主义测试：
 
-CFMPS:
+中文Frost多维度完美主义问卷, CFMPS:
 
 评分维度：
 1. 担心错误
