@@ -10,6 +10,8 @@ Some of them have already done a great job.
 May all of our dream come true, beyond the horizon of our life travel.  
 And thank you for reading these words, too.
 
+<a target="_blank" href="https://lxy2222.github.io/">IceYu 的前端笔记</a>: 亲爱的女朋友.
+
 <a target="_blank" href="http://molun.net/">未元境界</a>: God Lun the Writer.
 
 <a target="_blank" href="https://banana.moe">Kamikat's Blog</a>: 好吃可爱的兔耳猫.
