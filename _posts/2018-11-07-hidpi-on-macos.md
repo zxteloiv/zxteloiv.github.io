@@ -50,7 +50,7 @@ sudo defaults write /Library/Preferences/com.apple.windowserver.plist DisplayRes
 sudo defaults read /Library/Preferences/com.apple.windowserver.plist DisplayResolutionEnabled 
 ```
 
-然后就需要随便在任意地方新建一个文件，用于记录我们想要的分辨率。如上节所述，需要先获得显示器制造商编号（DisplayVendorID）和设备编号(DisplayProductID)，可以通过系统命令 `ioreg` 获得：
+然后就需要随便在任意地方新建一个文件，用于记录我们想要的分辨率。如上节所述，需要先获得显示器制造商编号(DisplayVendorID)和设备编号(DisplayProductID)，可以通过系统命令 `ioreg` 获得：
 
 ```bash
 ioreg -lw0 | ggrep IODisplayPrefsKey
@@ -64,7 +64,7 @@ ioreg -l | grep DisplayProductID
 .... IOService:/.........   /AppleDisplay-5e3-2490
 ```
 
-注意最后的一段，AppleDisplay-5e3-2490 即可以得到制造商 ID 为5e3，设备 ID 为2490，均为16进制。而使用后两个命令，也可以得到这两个值的十进制，即 9360 和 1507，需要先自己转换为16进制。
+注意最后的一段，AppleDisplay-5e3-2490 即可以得到制造商 ID 为5e3，设备 ID 为2490，均为16进制。而使用后两个命令，也可以得到这两个值的十进制，即 1507 和 9360，需要先自己转换为16进制。
 
 这两个值需要写入即将创建的显示器配置文件中，也会确定该配置文件所放的路径。
 使用[这个在线工具](https://comsysto.github.io/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/)会比较方便，也能直观地看到最终的XML文件。
