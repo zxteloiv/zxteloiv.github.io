@@ -5,21 +5,28 @@ permalink: /cn/
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <h1 class="page-heading">中文博客和一些笔记 (Blogs and notes in Chinese)</h1>
 
   <ul class="post-list">
-      {% for post in site.categories.chn %}
+      {% assign chn_and_notes = site.categories.chn | concat: site.categories.note | sort: "date" | reverse  %}
+      {% for post in chn_and_notes %}
       <li>
-          <span>{{ post.date | date: "%b %-d, %Y" }}</span> 
+          {% if "note" == post.categories[0] %} 
+            <span>[NOTES]</span>
+          {% endif %}
+            <span>{{ post.date | date: "%b %-d, %Y" }}</span> 
+          
           <h2>
               <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
           </h2>
-          <p>
-          {{ post.excerpt }}
-          </p>
+              {% if "note" != post.categories[0] %}
+                <p>{{ post.excerpt }}</p>
+              {% endif %}
       </li>
       {% endfor %}
   </ul>
+
+  <p>单独的笔记页面：<a href="/notes/">在这里</a></p>
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
