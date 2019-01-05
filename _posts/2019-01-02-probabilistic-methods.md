@@ -321,7 +321,7 @@ $$
 \Pr(\cap_i \overline{A_i})
     &= \prod_i \Pr(\overline{A_i} \mid \cap_{j=1}^{i-1} \overline{A_j}) \\
     &= \prod_i (1 - \Pr(A_i \mid \cap_{j=1}^{i-1} \overline{A_j})) \\
-    &\le \prod_i (1 - 2p) > 0
+    &\ge \prod_i (1 - 2p) > 0
 \end{align}
 $$
 
