@@ -223,6 +223,8 @@ Reification 在 RDF 规范中是一个定义好的术语，它指将某种语法
 - 基于Neo-Davidsonian的模型
 - FrameBase
 
+这些模型的特性总结主要来自 [FrameBase 的官网](http://www.framebase.org/about)，此处表示感谢。
+
 最后还强行写了一些语义表示的相关工作，希望对大家有用。
 
 # 参考文献 
