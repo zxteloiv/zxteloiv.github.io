@@ -3,7 +3,7 @@ layout: post
 title:  "回顾2016"
 date:   2016-12-31 22:00:00 +0800
 tags: linear_programming
-categories: chn
+categories: life
 math_support: 
 ---
 
