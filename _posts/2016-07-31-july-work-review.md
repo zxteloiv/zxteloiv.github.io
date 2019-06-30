@@ -3,7 +3,7 @@ layout: post
 title:  "七月工作小结"
 date:   2016-07-31 21:05 +0800
 tags: 
-categories: chn
+categories: life
 math_support: 
 ---
 

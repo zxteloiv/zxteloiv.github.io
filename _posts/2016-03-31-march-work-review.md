@@ -3,7 +3,7 @@ layout: post
 title:  "三月工作小结"
 date:   2016-03-31 23:20 +0800
 tags: learning python attention 
-categories: chn learning
+categories: life
 math_support: 
 ---
 

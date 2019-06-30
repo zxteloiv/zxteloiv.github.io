@@ -3,7 +3,7 @@ layout: post
 title:  "六月工作小结"
 date:   2016-06-30 23:20 +0800
 tags: learning 
-categories: chn
+categories: life
 math_support: 
 ---
 

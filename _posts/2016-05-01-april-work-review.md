@@ -3,7 +3,7 @@ layout: post
 title:  "四月工作小结"
 date:   2016-05-01 23:10 +0800
 tags: learning julia
-categories: chn learning
+categories: life
 math_support: 
 ---
 
