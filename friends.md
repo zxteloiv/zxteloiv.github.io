@@ -28,5 +28,5 @@ And thank you for reading these words, too.
 
 <a target="_blank" href="http://blog.cee.moe/">Cee</a>: Hub & Authority 值双巨高的大佬.
 
-<a target="_blank" href="https://bismarck.moe/">desvl.xyz</a>: Interests come from thinking.
+<a target="_blank" href="https://desvl.xyz/">desvl.xyz</a>: Interests come from thinking.
 
