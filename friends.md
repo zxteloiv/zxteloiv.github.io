@@ -20,15 +20,11 @@ And thank you for reading these words, too.
 
 <a target="_blank" href="http://blog.atelier39.org/">未来代码研究所</a>: 马家沟校友.
 
-<a target="_blank" href="http://otakuchiyan.github.io/">雨宮七葉</a>: 高码力高中生.
-
 <a target="_blank" href="http://enigmahuang.me/">尼玛.黄</a>: 应用数学巨巨.
 
-<a target="_blank" href="http://log.7thprotocol.org/">7niaL</a>: 又一个作家.
+<!--<a target="_blank" href="http://earlonus.com/">earlonus</a>: 踏实上进的鹅厂员工.-->
 
-<a target="_blank" href="http://earlonus.com/">earlonus</a>: 踏实上进的鹅厂员工.
-
-<a target="_blank" href="https://kyouko.net/blog">Betakuang</a>: 北邮大大咬子.
+<a target="_blank" href="https://betakuang.me/blog/">Betakuang</a>: 咬子大大.
 
 <a target="_blank" href="http://blog.cee.moe/">Cee</a>: Hub & Authority 值双巨高的大佬.
 
