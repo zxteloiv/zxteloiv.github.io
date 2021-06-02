@@ -197,7 +197,7 @@ $$
 常用的二阶矩也就只有方差，而有方差的不等式固然就会想到切比雪夫不等式（Chebyshev Inequality），即 $$\Pr(\lvert X - \mathbb{E}[X]\rvert\ge a) \le Var[X]/a^2$$，利用马尔可夫不等式可直接得到，
 
 $$
-\Pr(\lvert X - \mathbb{E}[X]\rvert\ge a) = \Pr((X - \mathbb{E}[X])^2 \ge a^2) = \mathbb E (X - \mathbb{E}[X])^2 / a^2 = Var[X]/a^2
+\Pr(\lvert X - \mathbb{E}[X]\rvert\ge a) = \Pr((X - \mathbb{E}[X])^2 \ge a^2) \ge \mathbb E (X - \mathbb{E}[X])^2 / a^2 = Var[X]/a^2
 $$
 
 为了方便我们也利用它证明一个特殊情形：
