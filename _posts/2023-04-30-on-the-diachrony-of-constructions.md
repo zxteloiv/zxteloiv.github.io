@@ -4,7 +4,6 @@ title:  "关于构式历时性的几个想法——以“刷墙”为例"
 date:   2023-04-30 17:00 +0800
 tags: construction_grammar diachrony
 categories: chn
-math_support: mathjax
 ---
 
 在介绍构式的所谓“动态性”时，牛保义等[1]提出了几个“刷墙”构式能产性的例子，即“刷卡”、“刷脸”、“刷屏”等，
