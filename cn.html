@@ -5,23 +5,17 @@ permalink: /cn/
 
 <div class="home">
 
-  <h1 class="page-heading">中文博客和一些笔记 (Blogs and notes in Chinese)</h1>
+  <h1 class="page-heading">中文博客和一些笔记 (Blogs and notes in Mandarin)</h1>
 
   <ul class="post-list">
-      {% assign chn_and_notes = site.categories.chn | concat: site.categories.note | sort: "date" | reverse  %}
-      {% for post in chn_and_notes %}
+      {% for post in site.categories.chn %}
       <li>
-          {% if "note" == post.categories[0] %} 
-            <span>[NOTES]</span>
-          {% endif %}
-            <span>{{ post.date | date: "%b %-d, %Y" }}</span> 
+          <span>{{ post.date | date: "%b %-d, %Y" }}</span> 
           
           <h2>
               <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
           </h2>
-              {% if "note" != post.categories[0] %}
-                <p>{{ post.excerpt }}</p>
-              {% endif %}
+          <p>{{ post.excerpt }}</p>
       </li>
       {% endfor %}
   </ul>
