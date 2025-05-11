@@ -2,6 +2,7 @@
 layout: post
 title:  "奖励模型之解放思想"
 date:   2025-04-27 13:00 +0800
+math_support: katex
 tags: llm reward_model
 categories: chn
 ---
@@ -71,7 +72,7 @@ Reinforced Self-Training，主要由DeepMind提出和发展，最新有清华的
 ## 为什么它会有效？
 
 $$
-\nabla J(\theta) = -\mathbb{E}_{{{x}} \sim \mathcal{D}} \left[ \lambda \mathbb{E}_{{{y}} \sim \pi_{\theta'}({{y}}|{{x}})} \left[ F({{x}}, {{y}}; \tau) \nabla \log \pi_{\theta}({{y}} \mid {{x}}) \right] + (1 - \lambda) \mathbb{E}_{{{y}} \sim p({{y}}|{{x}})} \left[ F({{x}}, {{y}}; \tau) \nabla \log \pi_{\theta}({{y}} \mid {{x}}) \right] \right]
+\nabla J(\theta) = -\mathbb{E}_{ x \sim \mathcal{D} } \left[ \lambda \mathbb{E}_{y \sim \pi_{\theta'}(y|x)} \left[ F(x, y; \tau) \nabla \log \pi_{\theta}(y \mid x) \right] + (1 - \lambda) \mathbb{E}_{ y \sim p(y|x)} \left[ F(x, y; \tau) \nabla \log \pi_{\theta}(y \mid x) \right] \right]
 $$
 
 -   左侧一开始是个Online的策略梯度，过滤函数F可以看作是个Q(x, y)的值函数
