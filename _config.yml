@@ -3,8 +3,8 @@ title: It's calling me again
 email: zxteloiv@gmail.com
 description: 僕は僕のことが知りたい...
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://libzx.so" # the base hostname & protocol for your site
-twitter_username: haruki_kirigaya
+url: "https://blog.parsing.nl" # the base hostname & protocol for your site
+twitter_username: h2ruk1
 github_username:  zxteloiv
 
 # Build settings
